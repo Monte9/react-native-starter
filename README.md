@@ -1,5 +1,11 @@
-React-Native-Starter ![snowflake](http://imgur.com/a/LXS8l)
+<div style="text-align:center">
+<img src="logo.png" width="100" height="100">
+<br />
+🚀 React Native Starter 🚀
+</div>
+
 ==================================
+
 React Native 🚀starter app for using all the latest 💯 & greatest 🏅components! - [Demo](#screens)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
