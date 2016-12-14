@@ -1,4 +1,4 @@
-<img src="logo.png" width="880" height="300">
+<img src="logo_updated.png" width="880" height="300">
 
 ==================================
 
