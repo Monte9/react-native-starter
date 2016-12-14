@@ -1,12 +1,8 @@
-<div style="text-align:center">
-<img src="logo.png" width="100" height="100">
-<br />
-🚀 React Native Starter 🚀
-</div>
+<img src="logo.png" width="880" height="300">
 
 ==================================
 
-React Native 🚀starter app for using all the latest 💯 & greatest 🏅components! - [Demo](#screens)
+🚀 React Native Starter 🚀 app for using all the latest 💯 & greatest 🏅components! - [Demo](#screens)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
 
