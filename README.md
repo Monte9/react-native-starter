@@ -1,37 +1,36 @@
 <img src="logo_updated.png" width="880" height="300">
 
-==================================
-
-🚀 React Native Starter 🚀 app for using all the latest 💯 & greatest 🏅components! - [Demo](#screens)
+🚀 React Native Starter 🚀 app that uses all the latest 💯 & greatest 🏅components! - [Demo](#screens)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
+
+==================================
 
 ## Installation
 
 * [Install React-Native](https://facebook.github.io/react-native/docs/getting-started.html#content)
 
-* install dependencies
+* `git clone git@github.com:Monte9/react-native-starter.git`
 
-```
-git clone git@github.com:Monte9/react-native-starter.git
+* `cd react-native-starter`
 
-cd react-native-starter
+* `yarn`
 
-yarn
-```
 
-## To run:
+## Running the app
+
 * For iOS, from the command line, run via command: ```react-native run-ios``` or open XCode and load project, Run ```Product -> Run (⌘+R)```
+
 * For android, from the command line, run via the command: ```react-native run-android``` assuming you have an emulator or device running and attached
+
 * To run Jest, ```npm test```
+
 * To debug Jest unit cases, install [node_inspector](https://github.com/node-inspector/node-inspector) and run ```npm run test-chrome```
+
 * Hack on!
 
-----------
 
-
-------------
-##Notes
+## Notes
 
 Code is written to [JS Standard](https://github.com/feross/standard) and validated with [Eslint](http://eslint.org/).  To setup your favorite editor using the Eslint configuration, see [Editors](http://eslint.org/docs/user-guide/integrations#editors)
 
@@ -64,9 +63,7 @@ Snowflake uses CI with [Bitrise.io]( https://www.bitrise.io) and has **extensive
 - [Technologies](#technologies)
 - [Continuous Integration](#continuous-integration)
 - [Redux State Management](#redux-state-management)
-- [Hot Reloading](#hot-reloading)
 - [FAQ](#faq)
-- [Source documentation](http://bartonhammond.github.io/snowflake/snowflake.js.html)
 
 ----------
 
@@ -169,8 +166,8 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 ## FAQ
 
-### Is this project still under development?
+### Are you accepting PR's?
 
-Yes. Please feel free to submit a PR if you would like to contribute.
+Yes. This project is actively under development. PR's are much appreciated.
 
 ######-Monte Thakkar
