@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import NavigationCardStackContainer from './NavigationCardStackContainer'
-import { push, pop} from '../actions/navActions'
+import { push, pop} from '../actions/navigation'
 
 function mapStateToProps (state) {
   return {

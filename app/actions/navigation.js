@@ -1,4 +1,5 @@
-import { PUSH_ROUTE, POP_ROUTE } from '../constants/constants'
+export const PUSH_ROUTE = 'PUSH_ROUTE'
+export const POP_ROUTE = 'POP_ROUTE'
 
 export function push(route) {
   return {

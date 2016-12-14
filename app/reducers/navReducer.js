@@ -1,34 +1,23 @@
-import { NavigationExperimental } from 'react-native'
-const {
-  StateUtils: NavigationStateUtils
-} = NavigationExperimental
+import {
+  PUSH_ROUTE,
+  POP_ROUTE
+} from '../actions/navigation'
 
-import { PUSH_ROUTE, POP_ROUTE } from '../constants/constants'
+import pushRoute from './nav/push_route'
+import popRoute from './nav/pop_route'
 
-function navReducer(state, action) {
-  if (!state) {
-    return {
-      index: 0,
-      routes: [{ key: 'Home' }],
-    }
-  }
+const initialState = {
+  index: 0,
+  routes: [{ key: 'Login', type: 'login' }],
+}
+
+export default function( state = initialState, action ) {
   switch (action.type) {
-    case PUSH_ROUTE: {
-      const routes = state.routes.slice();
-      routes.push(action.route);
-      return {
-        ...state,
-        prevPushedRoute: action.route,
-        index: routes.length - 1,
-        routes,
-      }
-    }
-    case POP_ROUTE: {
-      return NavigationStateUtils.pop(state)
-    }
+    case PUSH_ROUTE:
+      return pushRoute( state, action )
+    case POP_ROUTE:
+      return popRoute( state, action )
     default:
       return state
   }
 }
-
-export default navReducer

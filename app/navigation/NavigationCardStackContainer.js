@@ -1,10 +1,12 @@
 import React, { Component, PropTypes } from 'react'
 import { View, Text, NavigationExperimental } from 'react-native'
 
-import Home from '../components/Home'
-import About from '../components/About'
 import Header from './NavHeader'
 import ModalHeader from './ModalHeader'
+
+import Home from '../components/Home'
+import About from '../components/About'
+import Login from '../components/Login'
 
 const {
   CardStack: NavigationCardStack,
@@ -19,13 +21,13 @@ class NavigationCardStackContainer extends Component {
         return <Home />
       case 'About':
         return <About />
+      case 'Login':
+        return <Login />
     }
   }
 
   _renderHeader = (sceneProps) => {
     const { navState } = this.props
-
-    console.log(navState)
 
     if (navState.prevPushedRoute && navState.prevPushedRoute.type === 'modal' && navState.prevPushedRoute.key === navState.routes[navState.index].key) {
       return (
@@ -34,6 +36,8 @@ class NavigationCardStackContainer extends Component {
           {...sceneProps}
         />
       );
+    } else if (navState.routes[navState.index].type === 'login') {
+      return
     } else {
       return (
         <Header

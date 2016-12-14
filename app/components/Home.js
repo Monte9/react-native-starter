@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
-import { push } from '../actions/navActions'
+import { push } from '../actions/navigation'
 
 const styles = {
   container: {
