@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import {
   StyleSheet,
   View,
@@ -11,6 +11,7 @@ import {
 
 import Spinner from 'react-native-loading-spinner-overlay';
 import { connect } from 'react-redux'
+import { push, pop } from '../actions/navigation'
 
 // const mapStateToProps = (state) => ({
 //   isAuthenticating: state.user.isAuthenticating,
@@ -18,7 +19,7 @@ import { connect } from 'react-redux'
 //   error: state.user.error,
 // })
 
-class LoginView extends Component {
+class SignupView extends Component {
   state = {
     email: '',
     password: '',
@@ -30,22 +31,23 @@ class LoginView extends Component {
     console.log("forgot password")
   }
 
-  onPressSignUp() {
-    console.log("sign up pressed")
+  backToLoginView() {
+    this.props.dispatch(pop())
   }
 
   render() {
+    console.log(this.props)
+
     return (
       <View style={styles.container}>
         <Image style={styles.bg} source={require('../images/login_bg.png')} />
-        <View style={styles.header}>
-          <View style={styles.headerIconView}>
-            <Image style={styles.mark} source={require('../images/logo_transparent.png')} />
-          </View>
-          <View style={styles.headerTitleView}>
-            <Text style={styles.appTitle}>React Native </Text>
-            <Text style={styles.appTitleExtra}>Starter</Text>
-          </View>
+        <View style={styles.headerIconView}>
+          <TouchableOpacity style={styles.headerBackButtonView} onPress={this.backToLoginView.bind(this)}>
+            <Image style={styles.backButtonIcon} source={require('../images/back.png')} />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.headerTitleView}>
+          <Text style={styles.titleViewText}>Sign Up</Text>
         </View>
         <Spinner visible={this.state.isAuthenticating} />
         <View style={styles.inputs}>
@@ -58,11 +60,22 @@ class LoginView extends Component {
             </View>
             <TextInput
               style={[styles.input, styles.whiteFont]}
-              placeholder="Email"
+              placeholder="Name"
               placeholderTextColor="#FFF"
               underlineColorAndroid='transparent'
               onChangeText={(email) => this.setState({email})}
               value={this.state.email}/>
+          </View>
+          <View style={styles.inputContainer}>
+            <View style={styles.imageContainer}>
+              <Image style={styles.inputPassword} source={require('../images/signup_email_icon.png')}/>
+            </View>
+            <TextInput
+              style={[styles.input, styles.whiteFont]}
+              placeholder="Email"
+              placeholderTextColor="#FFF"
+              onChangeText={(password) => this.setState({password})}
+              value={this.state.password}/>
           </View>
           <View style={styles.inputContainer}>
             <View style={styles.imageContainer}>
@@ -76,24 +89,31 @@ class LoginView extends Component {
               onChangeText={(password) => this.setState({password})}
               value={this.state.password}/>
           </View>
-          <View style={styles.signinView}>
+          <View style={styles.inputContainer}>
+            <View style={styles.imageContainer}>
+              <Image style={styles.inputUsername} source={require('../images/signup_birthday_icon.png')}/>
+            </View>
+            <TextInput
+              style={[styles.input, styles.whiteFont]}
+              placeholder="Birthday"
+              placeholderTextColor="#FFF"
+              underlineColorAndroid='transparent'
+              onChangeText={(email) => this.setState({email})}
+              value={this.state.email}/>
+          </View>
+        </View>
+        <View style={styles.footerContainer}>
+          <View style={styles.signupView}>
             <TouchableOpacity
-              style={styles.signin}
-              onPress={this.props.onPress.bind(this, this.state.email, this.state.password)}>
-              <Text style={styles.signinText}>Sign In</Text>
+              style={styles.signup}>
+              <Text style={styles.signupText}>Join</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity
-            style={styles.forgotContainer}
-            onPress={this.onPressForgotPassword}>
-            <Text style={styles.forgotText}>Forgot Password</Text>
+            style={styles.signin}>
+            <Text style={styles.greyFont}>Already have an account?<Text style={styles.whiteFont}> Sign In</Text></Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity
-          style={styles.signup}
-          onPress={this.props.onSignupPress.bind(this)}>
-          <Text style={styles.greyFont}>Dont have an account?<Text style={styles.whiteFont}> Sign Up</Text></Text>
-        </TouchableOpacity>
       </View>
     );
   }
@@ -106,45 +126,36 @@ let styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   bg: {
-      position: 'absolute',
-      left: 0,
-      top: 0,
-      width: Dimensions.get('window').width,
-      height: Dimensions.get('window').height
-  },
-  header: {
-      justifyContent: 'center',
-      alignItems: 'center',
-      flex: .4,
-      backgroundColor: 'transparent'
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height
   },
   headerIconView: {
-    width: 150,
-    height: 180
+    flex: .1,
+    backgroundColor: 'transparent'
   },
-  mark: {
+  headerBackButtonView: {
+    width: 25,
+    height: 25,
+    position: 'absolute',
+    top: 35,
+    left: 15,
+  },
+  backButtonIcon: {
     resizeMode: 'contain',
-    width: 150,
-    height: 180
+    width: 25,
+    height: 25
   },
   headerTitleView: {
-    flexDirection: 'row',
+    flex: 0.05,
+    backgroundColor: 'transparent',
+    paddingLeft: 25,
   },
-  appTitle: {
-    color: 'rgba(120, 216, 194, 1)',
-    paddingTop: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    fontSize: 32,
-  },
-  appTitleExtra: {
-    color: 'rgba(240, 145, 136, 1)',
-    paddingTop: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    fontSize: 32,
+  titleViewText: {
+    fontSize: 40,
+    color: '#fff',
   },
   errorText: {
     color: '#FF3366',
@@ -155,28 +166,32 @@ let styles = StyleSheet.create({
     fontSize: 15,
   },
   inputs: {
-      paddingTop: 20,
-      paddingBottom: 10,
-      flex: .40
-  },
-  signinView: {
     paddingTop: 20,
     paddingBottom: 10,
+    flex: .40
   },
-  signin: {
-      backgroundColor: '#FF3366',
-      height: 50,
-      width: Dimensions.get('window').width,
-      alignItems: 'center',
-      justifyContent: 'center',
-  },
-  signinText: {
-    color: '#FFF',
-  },
-  signup: {
+  footerContainer: {
+    flex: 0.15,
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 0.1
+  },
+  signupView: {
+    paddingTop: 20,
+  },
+  signup: {
+    backgroundColor: '#FF3366',
+    height: 50,
+    width: Dimensions.get('window').width,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  signupText: {
+    color: '#FFF',
+  },
+  signin: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 0.05
   },
   inputPassword: {
     width: 25,
@@ -207,8 +222,8 @@ let styles = StyleSheet.create({
       fontSize: 22,
   },
   forgotContainer: {
-    paddingTop:20,
-    paddingRight: 20,
+    paddingTop:10,
+    paddingRight: 10,
   },
   forgotText: {
     fontSize: 13,
@@ -223,4 +238,4 @@ let styles = StyleSheet.create({
   }
 })
 
-export default connect()(LoginView)
+export default connect()(SignupView)

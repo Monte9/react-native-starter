@@ -7,6 +7,7 @@ import ModalHeader from './ModalHeader'
 import Home from '../components/Home'
 import About from '../components/About'
 import Login from '../components/Login'
+import Signup from '../components/SignupView'
 
 const {
   CardStack: NavigationCardStack,
@@ -23,6 +24,8 @@ class NavigationCardStackContainer extends Component {
         return <About />
       case 'Login':
         return <Login />
+      case 'Signup':
+        return <Signup />
     }
   }
 
@@ -36,7 +39,7 @@ class NavigationCardStackContainer extends Component {
           {...sceneProps}
         />
       );
-    } else if (navState.routes[navState.index].type === 'login') {
+    } else if (navState.routes[navState.index].type === 'login' || navState.routes[navState.index].type === 'signup') {
       return
     } else {
       return (

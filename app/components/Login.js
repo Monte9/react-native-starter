@@ -64,6 +64,10 @@ class Login extends Component {
     // dispatch(userActionCreators.submitLogin(email, password))
   }
 
+  displaySignupView() {
+    this.props.dispatch(push({ key: 'Signup', type: 'signup' }))
+  }
+
   componentDidUpdate() {
     // the token must have been asynchronously loaded if available
     // if (this.props.token) {
@@ -74,7 +78,7 @@ class Login extends Component {
 
   render() {
     return (
-      <LoginView onPress={this.submitLogin.bind(this)}/>
+      <LoginView onPress={this.submitLogin.bind(this)} onSignupPress={this.displaySignupView.bind(this)}/>
     )
   }
 }
