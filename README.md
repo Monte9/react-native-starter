@@ -1,6 +1,6 @@
 <img src="logo_header.png" width="880" height="300">
 
-🚀 React Native Starter 🚀 app that uses all the latest 💯 & greatest 🏅components! - [Demo](#screens)
+ React Native Starter  app that uses all the latest  & greatest components! - [Demo](#screens)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
 
@@ -8,9 +8,9 @@
 
 ## [Screens](#screens)
 
-<img src="screenshot/login_both.png" width="880" height="300">
+<img src="screenshots/login_both.png" width="600" height="559">
 
-<img src="screenshot/signup_both.png" width="880" height="300">
+<img src="screenshots/signup_both.png" width="600" height="559">
 
 | Platform| Register     | Login | Profile   |
 | :------:| :-------: | :----: | :---: |
