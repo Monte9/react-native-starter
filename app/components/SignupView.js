@@ -36,8 +36,6 @@ class SignupView extends Component {
   }
 
   render() {
-    console.log(this.props)
-
     return (
       <View style={styles.container}>
         <Image style={styles.bg} source={require('../images/login_bg.png')} />
@@ -110,7 +108,8 @@ class SignupView extends Component {
             </TouchableOpacity>
           </View>
           <TouchableOpacity
-            style={styles.signin}>
+            style={styles.signin}
+            onPress={this.backToLoginView.bind(this)}>
             <Text style={styles.greyFont}>Already have an account?<Text style={styles.whiteFont}> Sign In</Text></Text>
           </TouchableOpacity>
         </View>
