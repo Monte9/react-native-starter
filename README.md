@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
 
-==================================
+---------------
 
 ## [Screens](#screens)
 
@@ -48,7 +48,6 @@
 - [Notes](#notes)
 - [FAQ](#faq)
 
-----------
 
 ## Summary
 
@@ -62,7 +61,6 @@
 1. The backend is provided by either a Hapi server or Parse server using the **Rest API**
 1. **Every action** performed by the UI interfaces with the **Redux actions** and subsequently to the Redux Store.  This **reduces the complexity** of the JSX Components **tremendously**and makes them easily testable.
 
-----------
 
 ## Technologies
 *The following are brief descriptions of the technologies used*
@@ -83,7 +81,6 @@ Active contributor on React Native Screens repo. Submitted PR's for Login & Sign
 
 ###[Validate.js](http://validatejs.org/)
 
----------------
 
 ## Editor Configuration
 
@@ -91,16 +88,16 @@ Active contributor on React Native Screens repo. Submitted PR's for Login & Sign
 
 <img src="screenshots/atom_editor.png" width="600" height="444">
 
-Package: Nuclide
-UI Theme: One Dark
-Syntax Theme: Gloom
+**Package:** Nuclide
 
-Additional Packages:
+**UI Theme:** One Dark
+
+**Syntax Theme:** Gloom
+
+**Additional Packages:**
 ```bash
 apm install editorconfig es6-javascript javascript-snippets linter linter-eslint language-babel
 ```
-
----------------
 
 ## Notes
 
@@ -126,7 +123,6 @@ Snowflake supports **Hot Reloading** of its state.
 
 Snowflake uses CI with [Bitrise.io]( https://www.bitrise.io) and has **extensive docs and 45+ min of video** demonstating implementation.
 
----------------
 
 ## FAQ
 
