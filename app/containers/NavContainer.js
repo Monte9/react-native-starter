@@ -1,8 +1,11 @@
 import React, { Component, PropTypes } from 'react'
 import { View, Text, NavigationExperimental } from 'react-native'
+import { connect } from 'react-redux'
 
-import Header from './NavHeader'
-import ModalHeader from './ModalHeader'
+import { push, pop } from '../actions/navigation'
+
+import Header from '../components/headers/NavHeader'
+import ModalHeader from '../components/headers/ModalHeader'
 
 import Home from '../components/Home'
 import About from '../components/About'
@@ -13,9 +16,7 @@ const {
   CardStack: NavigationCardStack,
 } = NavigationExperimental
 
-let styles = {}
-
-class NavigationCardStackContainer extends Component {
+class NavContainer extends Component {
   _renderScene = (props) => {
     switch(props.scene.route.key) {
       case 'Home':
@@ -53,7 +54,7 @@ class NavigationCardStackContainer extends Component {
   render() {
     const { navState } = this.props
     let direction = 'horizontal'
-    if (navState.prevPushedRoute && navState.prevPushedRoute.type === 'modal') {
+    if (navState.prevPushedRoute && ( navState.prevPushedRoute.type === 'modal' || navState.prevPushedRoute.type === 'login' )) {
       direction = 'vertical'
     }
 
@@ -76,4 +77,14 @@ styles = {
   },
 }
 
-export default NavigationCardStackContainer;
+const mapStateToProps = (state) => ({
+  navState: state.navState,
+})
+
+export default connect(
+  mapStateToProps,
+  {
+    push: (route) => push(route),
+    pop: () => pop(),
+  }
+)(NavContainer)

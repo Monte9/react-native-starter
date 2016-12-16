@@ -35,6 +35,11 @@ class SignupView extends Component {
     this.props.dispatch(pop())
   }
 
+  submitSignup() {
+    this.props.dispatch(pop())
+    this.props.dispatch(pop())
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -103,7 +108,8 @@ class SignupView extends Component {
         <View style={styles.footerContainer}>
           <View style={styles.signupView}>
             <TouchableOpacity
-              style={styles.signup}>
+              style={styles.signup}
+              onPress={this.submitSignup.bind(this)}>
               <Text style={styles.signupText}>Join</Text>
             </TouchableOpacity>
           </View>
@@ -148,7 +154,7 @@ let styles = StyleSheet.create({
     height: 25
   },
   headerTitleView: {
-    flex: 0.05,
+    flex: 0.07,
     backgroundColor: 'transparent',
     paddingLeft: 25,
   },

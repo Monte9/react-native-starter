@@ -59,7 +59,7 @@ class Login extends Component {
   }
 
   submitLogin(email, password) {
-    this.props.dispatch(push({ key: 'About' }))
+    this.props.dispatch(pop())
     // const { dispatch } = this.props
     // dispatch(userActionCreators.submitLogin(email, password))
   }
@@ -88,15 +88,6 @@ class Login extends Component {
 //   token: state.user.token
 // })
 
-// function mapStateToProps () { return {} }
-//
-// function mapDispatchToProps (dispatch) {
-//   return {
-//     push: (route) => dispatch(push(route))
-//   }
-// }
-
 export default connect(
   // mapStateToProps,
-  // mapDispatchToProps
 )(Login)

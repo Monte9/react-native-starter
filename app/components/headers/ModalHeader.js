@@ -31,7 +31,7 @@ class Header extends Component {
         onPress={this._back}>
         <Image
           style={{width: 25, height: 25}}
-          source={require('../images/close.png')}
+          source={require('../../images/close.png')}
         />
       </TouchableHighlight>
     )

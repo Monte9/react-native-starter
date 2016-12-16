@@ -8,7 +8,7 @@ import popRoute from './nav/pop_route'
 
 const initialState = {
   index: 0,
-  routes: [{ key: 'Login', type: 'login' }],
+  routes: [{ key: 'Home', type: 'home' }],
 }
 
 export default function( state = initialState, action ) {

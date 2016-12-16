@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
 import { push } from '../actions/navigation'
@@ -11,25 +11,22 @@ const styles = {
   },
 }
 
-const Home = ({ push }) => {
-  return (
-    <View style={styles.container}>
-      <Text>Hello from Home</Text>
-      <Text onPress={() => push({ key: 'About' })}>Go To About</Text>
-      <Text onPress={() => push({ key: 'About', type: 'modal' })}>Go To About With Modal</Text>
-    </View>
-  )
-}
+class Home extends Component {
+  componentDidMount() {
+    if(true) {
+      this.props.dispatch(push({ key: 'Login', type: 'login' }))
+    }
+  }
 
-function mapStateToProps () { return {} }
-
-function mapDispatchToProps (dispatch) {
-  return {
-    push: (route) => dispatch(push(route))
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Hello from Home</Text>
+        <Text onPress={() => this.props.dispatch(push({ key: 'About' }))}>Go To About</Text>
+        <Text onPress={() => this.props.dispatch(push({ key: 'About', type: 'modal' }))}>Go To About With Modal</Text>
+      </View>
+    )
   }
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home)
+export default connect()(Home)
