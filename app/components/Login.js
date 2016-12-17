@@ -56,10 +56,14 @@ const fetchUserDetails = (email) => async (dispatch, getState) => {
 class Login extends Component {
   componentDidMount() {
     //startAuthentication()
+    console.log("First call hrer/.")
+    this.props.hideTabBar()
+    console.log("Call complete in Login")
   }
 
   submitLogin(email, password) {
-    this.props.dispatch(pop())
+    this.props.dispatch(push({ key: 'Home', type: 'home' }))
+    // this.props.dispatch(pop())
     // const { dispatch } = this.props
     // dispatch(userActionCreators.submitLogin(email, password))
   }

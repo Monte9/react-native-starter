@@ -5,8 +5,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 import colors from '../colors'
 // import fonts from 'HSFonts'
 
-import HomeNavContainer from './NavContainer'
-// import About from './about/AboutRootContainer'
+import HomeNavContainer from './HomeNavContainer'
+import ProfileNavContainer from './ProfileNavContainer'
 // import Contact from './contact/ContactRootContainer'
 // import Pricing from './pricing/PricingRootContainer'
 // import More from './more/MoreRootContainer'
@@ -16,7 +16,7 @@ class TabContainer extends Component {
     super()
     this.state = {
       selectedTab: 'home',
-      hideTabBar: true,
+      hideTabBar: false,
     }
     this.changeTab = this.changeTab.bind(this)
   }
@@ -27,11 +27,10 @@ class TabContainer extends Component {
     })
   }
 
-  _showTabBar() {
+  _hideTabBar() {
     this.setState({
-      hideTabBar: false
+      hideTabBar: !this.state.hideTabBar
     });
-    console.log("Done???")
   }
 
   render () {
@@ -56,7 +55,7 @@ class TabContainer extends Component {
           renderIcon={() => <Icon color={colors.grey2} name='whatshot' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.primary} name='whatshot' size={26} />}
           onPress={() => this.changeTab('home')}>
-          <HomeNavContainer showTabBar={this._showTabBar.bind(this)} />
+          <HomeNavContainer hideTabBar={this._hideTabBar.bind(this)} />
         </TabNavigator.Item>
         <TabNavigator.Item
           tabStyle={selectedTab !== 'about' && { marginBottom: -6 }}
@@ -67,9 +66,9 @@ class TabContainer extends Component {
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='important-devices' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.primary} name='important-devices' size={26} />}
           onPress={() => this.changeTab('about')}>
-          <HomeNavContainer />
+          <ProfileNavContainer hideTabBar={this._hideTabBar.bind(this)} />
         </TabNavigator.Item>
-        <TabNavigator.Item
+        {/* <TabNavigator.Item
           tabStyle={selectedTab !== 'contact' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
@@ -101,7 +100,7 @@ class TabContainer extends Component {
           renderSelectedIcon={() => <Icon color={colors.primary} name='list' size={26} />}
           onPress={() => this.changeTab('more')}>
           <HomeNavContainer />
-        </TabNavigator.Item>
+        </TabNavigator.Item> */}
       </TabNavigator>
     )
   }
