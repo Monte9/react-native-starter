@@ -20,7 +20,7 @@ class NavContainer extends Component {
   _renderScene = (props) => {
     switch(props.scene.route.key) {
       case 'Home':
-        return <Home />
+        return <Home showTabBar={this.props.showTabBar}/>
       case 'About':
         return <About />
       case 'Login':

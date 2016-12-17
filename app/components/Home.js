@@ -14,7 +14,15 @@ const styles = {
 class Home extends Component {
   componentDidMount() {
     if(true) {
+      this.checkToken()
+      console.log("calling it now...")
       this.props.dispatch(push({ key: 'Login', type: 'login' }))
+    }
+  }
+
+  checkToken() {
+    if(false) {
+      this.props.showTabBar()
     }
   }
 

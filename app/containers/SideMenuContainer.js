@@ -10,7 +10,7 @@ import { connect } from 'react-redux'
 
 import SideMenu from 'react-native-side-menu'
 
-import NavContainer from './NavContainer'
+import TabContainer from './TabContainer'
 import SideMenuView from '../components/SideMenuView'
 
 class Button extends Component {
@@ -62,7 +62,7 @@ export default class SideMenuContainer extends Component {
         menu={sideMenu}
         isOpen={this.state.isOpen}
         onChange={(isOpen) => this.updateMenuState(isOpen)}>
-        <NavContainer />
+        <TabContainer />
         {/* <Button style={styles.button} onPress={() => this.toggle()}>
           <Image
             source={require('../images/menu.png')} style={{width: 32, height: 32}} />
