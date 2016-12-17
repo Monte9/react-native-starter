@@ -74,6 +74,8 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 ###[React Native Screens](https://github.com/browniefed/react-native-screens)
 *React Native implementation for Do, a free UI kit. You can see the entire DO library on invision [here:](https://www.invisionapp.com/do)*
 
+Active contributor on React Native Screens repo. Submitted PR's for Login & Signup screens.
+
 ###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
 *React Native Icons*
 
@@ -83,8 +85,6 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 ###[React Native Tab Navigator]* - Tab Bar component for React Native*
 <a href="https://github.com/exponentjs/react-native-tab-navigator>"<img src="screenshots/login_both.png" width="600" height="559"></a>
 
-Active contributor on React Native Screens repo. Submitted PR's for Login & Signup screens.
-
 ###[Validate.js](http://validatejs.org/)
 
 
@@ -92,7 +92,7 @@ Active contributor on React Native Screens repo. Submitted PR's for Login & Sign
 
 **Atom**
 
-<img src="screenshots/atom_editor.png" width="600" height="444">
+<img src="screenshots/atom_editor.png" width="600" height="270">
 
 **Package:** Nuclide
 
