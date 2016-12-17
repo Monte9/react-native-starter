@@ -82,8 +82,8 @@ Active contributor on React Native Screens repo. Submitted PR's for Login & Sign
 ###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
 *Side menu component for React Native*
 
-###[React Native Tab Navigator]* - Tab Bar component for React Native*
-<a href="https://github.com/exponentjs/react-native-tab-navigator>"<img src="screenshots/login_both.png" width="600" height="559"></a>
+###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator) - *Tab Bar component for React Native*
+<a href="https://github.com/exponentjs/react-native-tab-navigator"><img src="screenshots/react-native-tab-navigator.png" width="850" height="90.85"></a>
 
 ###[Validate.js](http://validatejs.org/)
 
