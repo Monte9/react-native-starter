@@ -81,7 +81,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 *Side menu component for React Native*
 
 ###[React Native Tab Navigator]* - Tab Bar component for React Native*
-<a href="https://github.com/exponentjs/react-native-tab-navigator>"<img src="screenshots/login_both.png" width="600" height="559"></a>
+<a href="https://github.com/exponentjs/react-native-tab-navigator"><img src="screenshots/react-native-tab-navigator.png" width="850" height="85"></a>
 
 Active contributor on React Native Screens repo. Submitted PR's for Login & Signup screens.
 
