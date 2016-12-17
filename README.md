@@ -1,6 +1,6 @@
 <img src="logo_header.png" width="880" height="300">
 
- React Native Starter  app that uses all the latest  & greatest components! - [Demo](#screens)
+🚀 React Native 🚀 starter app that uses all the latest 💯 & greatest 🏅 components! - [Demo](#screens)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
 
