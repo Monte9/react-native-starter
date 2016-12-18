@@ -39,7 +39,7 @@
 
 - [Summary](#summary)
 - [Technologies](#technologies)
-- [Editor Setup](#editor setup)
+- [Editor Setup](#editor-setup)
 - [TODO](#todo)
 - [FAQ](#faq)
 
