@@ -57,9 +57,15 @@ class Login extends Component {
   componentDidMount() {
     //startAuthentication()
     console.log("First call hrer/.")
-    this.props.hideTabBar()
-    console.log("Call complete in Login")
+    this.props.hideTabBar(true)
+    this.props.disableGestures(true)
+    console.log("Call complete in Login & disable gesture")
   }
+
+  // componentWillReceiveProps(nextProps) {
+  //   this.props.hideTabBar(true)
+  //   this.props.disableGestures(true)
+  // }
 
   submitLogin(email, password) {
     this.props.dispatch(push({ key: 'Home', type: 'home' }))

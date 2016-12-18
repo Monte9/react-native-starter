@@ -18,7 +18,8 @@ class Home extends Component {
       // this.props.dispatch(push({ key: 'Login', type: 'login' }))
     }
     console.log("First call in Home view")
-    this.props.hideTabBar()
+    this.props.hideTabBar(false)
+    this.props.disableGestures(false)
     console.log("Show show the tab bar!")
   }
 

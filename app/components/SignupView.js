@@ -27,6 +27,19 @@ class SignupView extends Component {
     error: ''
   }
 
+  componentDidMount() {
+    //startAuthentication()
+    console.log("First call hrer/.")
+    this.props.hideTabBar(true)
+    this.props.disableGestures(true)
+    console.log("Call complete in Login & disable gesture")
+  }
+
+  componentDidUpdate() {
+    this.props.hideTabBar(true)
+    this.props.disableGestures(true)
+  }
+
   onPressForgotPassword() {
     console.log("forgot password")
   }

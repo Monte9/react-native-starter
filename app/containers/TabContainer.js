@@ -27,9 +27,9 @@ class TabContainer extends Component {
     })
   }
 
-  _hideTabBar() {
+  _hideTabBar(value) {
     this.setState({
-      hideTabBar: !this.state.hideTabBar
+      hideTabBar: value
     });
   }
 
@@ -55,7 +55,7 @@ class TabContainer extends Component {
           renderIcon={() => <Icon color={colors.grey2} name='whatshot' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.primary} name='whatshot' size={26} />}
           onPress={() => this.changeTab('home')}>
-          <HomeNavContainer hideTabBar={this._hideTabBar.bind(this)} />
+          <HomeNavContainer hideTabBar={this._hideTabBar.bind(this)} disableGestures={this.props.disableGestures} />
         </TabNavigator.Item>
         <TabNavigator.Item
           tabStyle={selectedTab !== 'about' && { marginBottom: -6 }}

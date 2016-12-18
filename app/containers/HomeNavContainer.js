@@ -20,13 +20,13 @@ class HomeNavContainer extends Component {
   _renderScene = (props) => {
     switch(props.scene.route.key) {
       case 'Home':
-        return <Home hideTabBar={this.props.hideTabBar}/>
+        return <Home hideTabBar={this.props.hideTabBar} disableGestures={this.props.disableGestures} />
       case 'About':
         return <About />
       case 'Login':
-        return <Login hideTabBar={this.props.hideTabBar}/>
+        return <Login hideTabBar={this.props.hideTabBar} disableGestures={this.props.disableGestures} />
       case 'Signup':
-        return <Signup hideTabBar={this.props.hideTabBar}/>
+        return <Signup hideTabBar={this.props.hideTabBar} disableGestures={this.props.disableGestures} />
     }
   }
 

@@ -35,6 +35,7 @@ export default class SideMenuContainer extends Component {
   state = {
     isOpen: false,
     selectedItem: 'About',
+    disableGestures: false,
   };
 
   toggle() {
@@ -54,6 +55,12 @@ export default class SideMenuContainer extends Component {
     });
   }
 
+  disableGestures(value) {
+    this.setState({
+      disableGestures: value,
+    });
+  }
+
   render() {
     const sideMenu = <SideMenuView onItemSelected={this.onMenuItemSelected} />;
 
@@ -61,8 +68,9 @@ export default class SideMenuContainer extends Component {
       <SideMenu
         menu={sideMenu}
         isOpen={this.state.isOpen}
+        disableGestures={this.state.disableGestures}
         onChange={(isOpen) => this.updateMenuState(isOpen)}>
-        <TabContainer />
+        <TabContainer disableGestures={this.disableGestures.bind(this)}/>
         {/* <Button style={styles.button} onPress={() => this.toggle()}>
           <Image
             source={require('../images/menu.png')} style={{width: 32, height: 32}} />
