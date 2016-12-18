@@ -2,13 +2,13 @@ import React, { Component, PropTypes } from 'react'
 import { View, Text, NavigationExperimental } from 'react-native'
 import { connect } from 'react-redux'
 
-import { push_portfolio, pop_portfolio } from '../actions/navigation'
+import { push_portfolio, pop_portfolio } from '../../actions/navigation'
 
-import Header from '../components/headers/NavHeader'
-import ModalHeader from '../components/headers/ModalHeader'
+import Header from '../../components/headers/NavHeader'
+import ModalHeader from '../../components/headers/ModalHeader'
 
-import PortfolioHome from '../components/portfolio/PortfolioHome'
-import PortfolioAbout from '../components/portfolio/PortfolioAbout'
+import PortfolioHome from '../../components/portfolio/PortfolioHome'
+import PortfolioAbout from '../../components/portfolio/PortfolioAbout'
 
 const {
   CardStack: NavigationCardStack,

@@ -2,13 +2,13 @@ import React, { Component, PropTypes } from 'react'
 import { View, Text, NavigationExperimental } from 'react-native'
 import { connect } from 'react-redux'
 
-import { push_profile, pop_profile } from '../actions/navigation'
+import { push_profile, pop_profile } from '../../actions/navigation'
 
-import Header from '../components/headers/NavHeader'
-import ModalHeader from '../components/headers/ModalHeader'
+import Header from '../../components/headers/NavHeader'
+import ModalHeader from '../../components/headers/ModalHeader'
 
-import ProfileHome from '../components/profile/ProfileHome'
-import ProfileAbout from '../components/profile/ProfileAbout'
+import ProfileHome from '../../components/profile/ProfileHome'
+import ProfileAbout from '../../components/profile/ProfileAbout'
 
 const {
   CardStack: NavigationCardStack,

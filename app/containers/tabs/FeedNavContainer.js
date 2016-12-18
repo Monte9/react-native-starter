@@ -2,16 +2,16 @@ import React, { Component, PropTypes } from 'react'
 import { View, Text, NavigationExperimental } from 'react-native'
 import { connect } from 'react-redux'
 
-import { push_feed, pop_feed } from '../actions/navigation'
+import { push_feed, pop_feed } from '../../actions/navigation'
 
-import Header from '../components/headers/NavHeader'
-import ModalHeader from '../components/headers/ModalHeader'
+import Header from '../../components/headers/NavHeader'
+import ModalHeader from '../../components/headers/ModalHeader'
 
-import FeedHome from '../components/feed/FeedHome'
-import FeedAbout from '../components/feed/FeedAbout'
+import FeedHome from '../../components/feed/FeedHome'
+import FeedAbout from '../../components/feed/FeedAbout'
 
-import Login from '../components/Login'
-import Signup from '../components/SignupView'
+import Login from '../../components/Login'
+import Signup from '../../components/SignupView'
 
 const {
   CardStack: NavigationCardStack,

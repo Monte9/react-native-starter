@@ -4,9 +4,9 @@ import { StyleSheet, Platform } from 'react-native'
 import TabNavigator from 'react-native-tab-navigator';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-import FeedNavContainer from './FeedNavContainer'
-import PortfolioNavContainer from './PortfolioNavContainer'
-import ProfileNavContainer from './ProfileNavContainer'
+import FeedNavContainer from './tabs/FeedNavContainer'
+import PortfolioNavContainer from './tabs/PortfolioNavContainer'
+import ProfileNavContainer from './tabs/ProfileNavContainer'
 
 import colors from '../colors'
 
