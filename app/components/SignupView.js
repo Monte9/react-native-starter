@@ -11,7 +11,8 @@ import {
 
 import Spinner from 'react-native-loading-spinner-overlay';
 import { connect } from 'react-redux'
-import { push, pop } from '../actions/navigation'
+
+import { push_feed, pop_feed } from '../actions/navigation'
 
 // const mapStateToProps = (state) => ({
 //   isAuthenticating: state.user.isAuthenticating,
@@ -29,15 +30,11 @@ class SignupView extends Component {
 
   componentDidMount() {
     //startAuthentication()
-    console.log("First call hrer/.")
-    this.props.hideTabBar(true)
-    this.props.disableGestures(true)
-    console.log("Call complete in Login & disable gesture")
   }
 
   componentDidUpdate() {
-    this.props.hideTabBar(true)
-    this.props.disableGestures(true)
+    // this.props.hideTabBar(true)
+    // this.props.disableGestures(true)
   }
 
   onPressForgotPassword() {
@@ -45,12 +42,12 @@ class SignupView extends Component {
   }
 
   backToLoginView() {
-    this.props.dispatch(pop())
+    this.props.dispatch(pop_feed())
   }
 
   submitSignup() {
-    this.props.dispatch(pop())
-    this.props.dispatch(pop())
+    this.props.dispatch(pop_feed())
+    this.props.dispatch(push_feed({ key: 'Feed', type: 'home' }))
   }
 
   render() {

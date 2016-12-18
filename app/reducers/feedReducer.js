@@ -1,6 +1,6 @@
 import {
-  PUSH_ROUTE,
-  POP_ROUTE
+  PUSH_ROUTE_FEED,
+  POP_ROUTE_FEED
 } from '../actions/navigation'
 
 import pushRoute from './nav/push_route'
@@ -13,9 +13,9 @@ const initialState = {
 
 export default function( state = initialState, action ) {
   switch (action.type) {
-    case PUSH_ROUTE:
+    case PUSH_ROUTE_FEED:
       return pushRoute( state, action )
-    case POP_ROUTE:
+    case POP_ROUTE_FEED:
       return popRoute( state, action )
     default:
       return state

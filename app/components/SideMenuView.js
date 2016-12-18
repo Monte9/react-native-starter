@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     paddingLeft: 20,
-    paddingBottom: 20,
+    paddingBottom: 30,
     backgroundColor: '#D8D8D8'
   },
   avatar: {

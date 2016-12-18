@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
-import { push, pop } from '../actions/navigation'
+import { push_feed, pop_feed } from '../actions/navigation'
 
 import Storage from '../api/Storage'
 import LoginView from './LoginView'
@@ -56,10 +56,8 @@ const fetchUserDetails = (email) => async (dispatch, getState) => {
 class Login extends Component {
   componentDidMount() {
     //startAuthentication()
-    console.log("First call hrer/.")
     this.props.hideTabBar(true)
     this.props.disableGestures(true)
-    console.log("Call complete in Login & disable gesture")
   }
 
   // componentWillReceiveProps(nextProps) {
@@ -68,14 +66,15 @@ class Login extends Component {
   // }
 
   submitLogin(email, password) {
-    this.props.dispatch(push({ key: 'Home', type: 'home' }))
+    this.props.dispatch(push_feed({ key: 'Feed', type: 'home' }))
     // this.props.dispatch(pop())
     // const { dispatch } = this.props
     // dispatch(userActionCreators.submitLogin(email, password))
   }
 
   displaySignupView() {
-    this.props.dispatch(push({ key: 'Signup', type: 'signup' }))
+    this.props.dispatch(pop_feed())
+    this.props.dispatch(push_feed({ key: 'Signup', type: 'signup' }))
   }
 
   componentDidUpdate() {

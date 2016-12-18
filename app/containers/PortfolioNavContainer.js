@@ -2,38 +2,40 @@ import React, { Component, PropTypes } from 'react'
 import { View, Text, NavigationExperimental } from 'react-native'
 import { connect } from 'react-redux'
 
-import { push_profile, pop_profile } from '../actions/navigation'
+import { push_portfolio, pop_portfolio } from '../actions/navigation'
 
 import Header from '../components/headers/NavHeader'
 import ModalHeader from '../components/headers/ModalHeader'
 
-import ProfileHome from '../components/profile/ProfileHome'
-import ProfileAbout from '../components/profile/ProfileAbout'
+import PortfolioHome from '../components/portfolio/PortfolioHome'
+import PortfolioAbout from '../components/portfolio/PortfolioAbout'
 
 const {
   CardStack: NavigationCardStack,
 } = NavigationExperimental
 
-class ProfileNavContainer extends Component {
+class PortfolioNavContainer extends Component {
   _renderScene = (props) => {
     switch(props.scene.route.key) {
-      case 'Profile':
-        return <ProfileHome />
+      case 'Portfolio':
+        return <PortfolioHome />
       case 'About':
-        return <ProfileAbout />
+        return <PortfolioAbout />
     }
   }
 
   _renderHeader = (sceneProps) => {
-    const { profileNavState } = this.props
+    const { portfolioNavState } = this.props
 
-    if (profileNavState.prevPushedRoute && profileNavState.prevPushedRoute.type === 'modal' && profileNavState.prevPushedRoute.key === profileNavState.routes[profileNavState.index].key) {
+    if (portfolioNavState.prevPushedRoute && portfolioNavState.prevPushedRoute.type === 'modal' && portfolioNavState.prevPushedRoute.key === portfolioNavState.routes[portfolioNavState.index].key) {
       return (
         <ModalHeader
           pop={this.props.pop}
           {...sceneProps}
         />
       );
+    } else if (portfolioNavState.routes[portfolioNavState.index].type === 'login' || portfolioNavState.routes[portfolioNavState.index].type === 'signup') {
+      return
     } else {
       return (
         <Header
@@ -44,9 +46,9 @@ class ProfileNavContainer extends Component {
     }
   }
   render() {
-    const { profileNavState } = this.props
+    const { portfolioNavState } = this.props
     let direction = 'horizontal'
-    if (profileNavState.prevPushedRoute && ( profileNavState.prevPushedRoute.type === 'modal' || profileNavState.prevPushedRoute.type === 'login' )) {
+    if (portfolioNavState.prevPushedRoute && ( portfolioNavState.prevPushedRoute.type === 'modal' || portfolioNavState.prevPushedRoute.type === 'login' )) {
       direction = 'vertical'
     }
 
@@ -54,7 +56,7 @@ class ProfileNavContainer extends Component {
       <NavigationCardStack
         direction={direction}
         renderHeader={this._renderHeader}
-        navigationState={this.props.profileNavState}
+        navigationState={this.props.portfolioNavState}
         renderScene={this._renderScene}
       />
     )
@@ -70,13 +72,13 @@ styles = {
 }
 
 const mapStateToProps = (state) => ({
-  profileNavState: state.profileNavState,
+  portfolioNavState: state.portfolioNavState,
 })
 
 export default connect(
   mapStateToProps,
   {
-    push: (route) => push_profile(route),
-    pop: () => pop_profile(),
+    push: (route) => push_portfolio(route),
+    pop: () => pop_portfolio(),
   }
-)(ProfileNavContainer)
+)(PortfolioNavContainer)

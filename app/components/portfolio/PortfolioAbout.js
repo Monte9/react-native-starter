@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
-import { pop_profile } from '../../actions/navigation'
+
+import { pop_portfolio } from '../../actions/navigation'
 
 const styles = {
   container: {
@@ -11,15 +12,15 @@ const styles = {
   },
 }
 
-class ProfileAbout extends Component {
+class PortfolioAbout extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>LOLOLOL!! I love it!</Text>
-        <Text onPress={() => this.props.dispatch(pop_profile())}>Back</Text>
+        <Text>Yaya THis is about the portfolio</Text>
+        <Text onPress={() => this.props.dispatch(pop_portfolio())}>Back</Text>
       </View>
     )
   }
 }
 
-export default connect()(ProfileAbout)
+export default connect()(PortfolioAbout)

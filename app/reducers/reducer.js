@@ -1,9 +1,14 @@
 import { combineReducers } from 'redux'
 
-import navState from './navReducer'
 import userState from './userReducer'
+
+import feedNavState from './feedReducer'
+import portfolioNavState from './portfolioReducer'
 import profileNavState from './profileReducer'
 
 export default combineReducers({
-  navState, userState, profileNavState
+  userState,
+  feedNavState,
+  portfolioNavState,
+  profileNavState,
 })
