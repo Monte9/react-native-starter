@@ -1,6 +1,6 @@
 <img src="logo_header.png" width="880" height="300">
 
-🚀 React Native 🚀 starter app that uses all the latest 💯 & greatest 🏅 components! - [Demo](#screens)
+ React Native  starter app that uses all the latest  & greatest  components! - [Demo](#screens)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
 
@@ -39,8 +39,8 @@
 
 - [Summary](#summary)
 - [Technologies](#technologies)
-- [Editor](#editor)
-- [Notes](#notes)
+- [Editor Setup](#editor setup)
+- [TODO](#todo)
 - [FAQ](#faq)
 
 
@@ -85,7 +85,7 @@ You can see the entire DO library on Invision [here:](https://www.invisionapp.co
 ###[Validate.js](http://validatejs.org/)
 
 
-## Editor Configuration
+## Editor Setup
 
 **Atom**
 
