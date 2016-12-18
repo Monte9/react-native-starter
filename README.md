@@ -70,7 +70,10 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 ###[React Native Screens](https://github.com/browniefed/react-native-screens) - *React Native implementation for Do, a free UI kit.*
 
+<a href="https://github.com/browniefed/react-native-screens"><img src="screenshots/react-native-screens.png" width="850" height="95.3"></a>
+
 Active contributor on React Native Screens repo. Submitted PR's for Login & Signup screens.
+
 You can see the entire DO library on Invision [here:](https://www.invisionapp.com/do)
 
 ###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) - *3000 Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full stying.*
@@ -79,10 +82,10 @@ You can see the entire DO library on Invision [here:](https://www.invisionapp.co
 
 ###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu) - *Side menu component for React Native*
 
+<a href="https://github.com/react-native-community/react-native-side-menu"><img src="screenshots/react-native-side-menu.png" width="850" height="130"></a>
+
 ###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator) - *Tab Bar component for React Native*
 <a href="https://github.com/exponentjs/react-native-tab-navigator"><img src="screenshots/react-native-tab-navigator.png" width="850" height="90.85"></a>
-
-###[Validate.js](http://validatejs.org/)
 
 
 ## Editor Configuration
