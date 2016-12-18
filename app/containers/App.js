@@ -3,8 +3,6 @@ import { AppRegistry } from 'react-native'
 import { Provider } from 'react-redux'
 
 import SideMenuContainer from './SideMenuContainer'
-import TabContainer from './TabContainer'
-
 import configureStore from '../config/configureStore'
 
 const store = configureStore()

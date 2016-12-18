@@ -230,8 +230,8 @@ babel-generator@^6.18.0, babel-generator@^6.19.0, babel-generator@^6.21.0:
     source-map "^0.5.0"
 
 babel-helper-builder-react-jsx@^6.8.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/babel-helper-builder-react-jsx/-/babel-helper-builder-react-jsx-6.21.0.tgz#18707acd350c8e1b5a3b7470b988708fde844f1c"
+  version "6.21.1"
+  resolved "https://registry.yarnpkg.com/babel-helper-builder-react-jsx/-/babel-helper-builder-react-jsx-6.21.1.tgz#c4a24208655be9dc1cccf14d366da176f20645e4"
   dependencies:
     babel-runtime "^6.9.0"
     babel-types "^6.21.0"
@@ -2591,13 +2591,13 @@ mime-db@~1.23.0:
   version "1.23.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.23.0.tgz#a31b4070adaea27d732ea333740a64d0ec9a6659"
 
-mime-types@2.1.11, mime-types@~2.1.9:
+mime-types@2.1.11:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.11.tgz#c259c471bda808a85d6cd193b430a5fae4473b3c"
   dependencies:
     mime-db "~1.23.0"
 
-mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.6, mime-types@~2.1.7:
+mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.6, mime-types@~2.1.7, mime-types@~2.1.9:
   version "2.1.13"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.13.tgz#e07aaa9c6c6b9a7ca3012c69003ad25a39e92a88"
   dependencies:
@@ -3008,6 +3008,12 @@ react-clone-referenced-element@^1.0.1:
 react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
+
+react-native-elements@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-0.7.1.tgz#33111db698f4c2e030b540c90d673ad3f67f84e9"
+  dependencies:
+    react-native-tab-navigator "^0.3.3"
 
 react-native-loading-spinner-overlay@^0.4.1:
   version "0.4.1"

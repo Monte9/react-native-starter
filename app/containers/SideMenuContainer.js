@@ -6,8 +6,8 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native'
-import { connect } from 'react-redux'
 
+import { connect } from 'react-redux'
 import SideMenu from 'react-native-side-menu'
 
 import TabContainer from './TabContainer'
