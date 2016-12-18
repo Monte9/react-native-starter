@@ -58,17 +58,23 @@
 ## Technologies
 *The following are brief descriptions of the technologies used*
 
-### [React-Native](https://facebook.github.io/react-native/) - *LEARN ONCE, WRITE ANYWHERE: BUILD MOBILE APPS WITH REACT*
+### [React-Native](https://facebook.github.io/react-native/)
 
-<a href="https://facebook.github.io/react-native/"><img src="screenshots/react-native.png" width="850" height="186.72"></a>
+**LEARN ONCE, WRITE ANYWHERE: BUILD MOBILE APPS WITH REACT**
 
-###[Redux](http://redux.js.org/) - *Redux is a predictable state container for JavaScript apps.*
+<a href="https://facebook.github.io/react-native/"><img src="screenshots/react-native.png" width="850" height="186.72" border-style="solid" border-color="#ff0000"></a>
+
+###[Redux](http://redux.js.org/)
+
+**Redux is a predictable state container for JavaScript apps.**
 
 <a href="http://redux.js.org/"><img src="screenshots/redux.png" width="850" height="126.72"></a>
 
 If you'd like to read an excellent tutorial on Redux check this out: [https://egghead.io/courses/getting-started-with-redux](https://egghead.io/courses/getting-started-with-redux)
 
-###[React Native Screens](https://github.com/browniefed/react-native-screens) - *React Native implementation for Do, a free UI kit.*
+###[React Native Screens](https://github.com/browniefed/react-native-screens)
+
+**React Native implementation for Do, a free UI kit.**
 
 <a href="https://github.com/browniefed/react-native-screens"><img src="screenshots/react-native-screens.png" width="850" height="95.3"></a>
 
@@ -109,6 +115,10 @@ apm install editorconfig es6-javascript javascript-snippets linter linter-eslint
 ## TODO
 
 - [AsyncStorage](https://github.com/jasonmerino/react-native-simple-store)
+
+- [Facebook Login](https://github.com/facebook/react-native-fbsdk)
+
+- [Twitter Login](https://github.com/fullstackreact/react-native-oauth)
 
 - [I18n](https://github.com/AlexanderZaytsev/react-native-i18n)
 
