@@ -76,7 +76,7 @@ class TabContainer extends Component {
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='contacts' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.primary2} name='contacts' size={26} />}
           onPress={() => this.changeTab('profile')}>
-          <ProfileNavContainer hideTabBar={this._hideTabBar.bind(this)} />
+          <ProfileNavContainer hideTabBar={this._hideTabBar.bind(this)} changeTab={this.changeTab.bind(this)}/>
         </TabNavigator.Item>
       </TabNavigator>
     )

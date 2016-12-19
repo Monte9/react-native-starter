@@ -18,7 +18,7 @@ class ProfileNavContainer extends Component {
   _renderScene = (props) => {
     switch(props.scene.route.key) {
       case 'Profile':
-        return <ProfileHome />
+        return <ProfileHome changeTab={this.props.changeTab}/>
       case 'About':
         return <ProfileAbout />
     }

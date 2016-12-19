@@ -9,7 +9,7 @@ import {
   TouchableOpacity
 } from 'react-native'
 import { connect } from 'react-redux'
-import { push } from '../actions/navigation'
+import { restart_feed } from '../actions/navigation'
 
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { Button } from 'react-native-elements'
@@ -97,6 +97,7 @@ class SideMenuView extends Component {
             buttonStyle={styles.logoutButton}
             raised
             backgroundColor={colors.primary2}
+            onPress={() => this.props.dispatch(restart_feed({ key: 'Login', type: 'login' }))}
             icon={{name: 'sign-out', type: 'font-awesome', color:'white'}}
             title='LOGOUT'
             textStyle={{color: 'white'}}/>

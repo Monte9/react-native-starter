@@ -1,6 +1,7 @@
 //FEED TAB BAR ACTIONS
 export const PUSH_ROUTE_FEED = 'PUSH_ROUTE_FEED'
 export const POP_ROUTE_FEED = 'POP_ROUTE_FEED'
+export const RESTART_ROUTE_FEED = 'RESTART_ROUTE_FEED'
 
 export function push_feed(route) {
   return {
@@ -12,6 +13,13 @@ export function push_feed(route) {
 export function pop_feed() {
   return {
     type: POP_ROUTE_FEED
+  }
+}
+
+export function restart_feed(route) {
+  return {
+    type: RESTART_ROUTE_FEED,
+    route
   }
 }
 

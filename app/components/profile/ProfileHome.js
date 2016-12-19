@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 
 import colors from '../../colors'
 import settings_section from '../../sample_settings'
-import { push_profile } from '../../actions/navigation'
+import { push_profile, restart_feed } from '../../actions/navigation'
 
 const uri = 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg';
 
@@ -50,7 +50,7 @@ class ProfileHome extends Component {
             <ListItem
               key={1}
               hideChevron={true}
-              onPress={() => console.log("Log out user!")}
+              onPress={() => { this.props.changeTab('feed'); this.props.dispatch(restart_feed({ key: 'Login', type: 'login' }))}}
               title='LOGOUT'
               titleStyle={styles.logoutText}
               icon={{name: ''}} />

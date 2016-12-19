@@ -12,7 +12,7 @@ import {
 import Spinner from 'react-native-loading-spinner-overlay';
 import { connect } from 'react-redux'
 
-import { push_feed, pop_feed } from '../actions/navigation'
+import { push_feed, pop_feed, restart_feed } from '../actions/navigation'
 
 // const mapStateToProps = (state) => ({
 //   isAuthenticating: state.user.isAuthenticating,
@@ -46,8 +46,7 @@ class SignupView extends Component {
   }
 
   submitSignup() {
-    this.props.dispatch(pop_feed())
-    this.props.dispatch(push_feed({ key: 'Feed', type: 'home' }))
+    this.props.dispatch(restart_feed({ key: 'Feed', type: 'home' }))
   }
 
   render() {

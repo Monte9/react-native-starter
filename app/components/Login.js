@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
-import { push_feed, pop_feed } from '../actions/navigation'
+import { push_feed, pop_feed, restart_feed } from '../actions/navigation'
 
 import Storage from '../api/Storage'
 import LoginView from './LoginView'
@@ -66,14 +66,13 @@ class Login extends Component {
   // }
 
   submitLogin(email, password) {
-    this.props.dispatch(push_feed({ key: 'Feed', type: 'home' }))
+    this.props.dispatch(restart_feed({ key: 'Feed', type: 'home' }))
     // this.props.dispatch(pop())
     // const { dispatch } = this.props
     // dispatch(userActionCreators.submitLogin(email, password))
   }
 
   displaySignupView() {
-    this.props.dispatch(pop_feed())
     this.props.dispatch(push_feed({ key: 'Signup', type: 'signup' }))
   }
 
