@@ -62,7 +62,7 @@
 ## Technologies
 *The following are brief descriptions of the technologies used*
 
-1. ### [React-Native](https://facebook.github.io/react-native/)
+### [React-Native](https://facebook.github.io/react-native/)
 
 **Learn once, write anywhere: Build mobile apps with React**
 
@@ -70,7 +70,7 @@
 
 <br />
 
-1. ###[Redux](http://redux.js.org/)
+###[Redux](http://redux.js.org/)
 
 **Redux is a predictable state container for JavaScript apps.**
 
@@ -80,7 +80,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-1. ###[React Native Navigation Experimental](https://facebook.github.io/react-native/docs/navigation.html#navigationexperimental)
+###[React Native Navigation Experimental](https://facebook.github.io/react-native/docs/navigation.html#navigationexperimental)
 
 **If you are looking for greater control over your navigation stack, you can't go wrong with NavigationExperimental.**
 
@@ -88,7 +88,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-1. ###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator)
+###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator)
 
 **Tab Bar component for React Native**
 
@@ -96,7 +96,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-1. ###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
+###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
 
 **Side menu component for React Native**
 
@@ -104,7 +104,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-1. ###[React Native Elements](https://github.com/react-native-community/react-native-elements)
+###[React Native Elements](https://github.com/react-native-community/react-native-elements)
 
 **React Native Elements UI Toolkit**
 
@@ -112,7 +112,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-1. ###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
 
 **3000 Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full stying.**
 
@@ -120,7 +120,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-1. ###[React Native Screens](https://github.com/browniefed/react-native-screens)
+###[React Native Screens](https://github.com/browniefed/react-native-screens)
 
 **React Native implementation for Do, a free UI kit.**
 
