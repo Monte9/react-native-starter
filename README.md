@@ -82,6 +82,7 @@
 - [Summary](#summary)
 - [Technologies](#technologies)
 - [Screens](#screens)
+- [Demo](#demo)
 - [Editor Setup](#editor-setup)
 - [TODO](#todo)
 - [FAQ](#faq)
@@ -90,7 +91,7 @@
 
 ## Summary
 
-1. The app is a runs on **BOTH** iOS & Android using single codebase mostly written in Javascript.
+1. The app is runs on **BOTH** iOS & Android using a single codebase mostly written in Javascript.
 1. The app has Login & Signup screens with reducers for user input, login & signup actions.
 1. The Login & Signup screens display a spinner to indicate activity.
 1. The app includes a Tab Bar Controller and is customizable to add more tabs.
@@ -166,6 +167,16 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 **React Native implementation for Do, a free UI kit.**
 
 <a href="https://github.com/browniefed/react-native-screens"><img src="screenshots/react-native-screens.png" width="850" height="95.3"></a>
+
+<br />
+
+
+# [Demo](#demo)
+
+| Platform|  Demo    |
+| :------:| :-------: |
+| iOS|  ![ios Demo](screenshots/demo/demo_ios.gif)  |
+| Android | ![android Demo](screenshots/demo/demo_android.gif) | 
 
 <br />
 
