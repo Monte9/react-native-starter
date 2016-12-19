@@ -173,10 +173,9 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 # [Demo](#demo)
 
-| Platform|  Demo    |
+| Platform|  iOS    | Android    |
 | :------:| :-------: |
-| iOS|  ![ios Demo](screenshots/demo/demo_ios.gif)  |
-| Android | ![android Demo](screenshots/demo/demo_android.gif) | 
+| Demo |  ![ios Demo](screenshots/demo/demo_ios.gif)  | ![android Demo](screenshots/demo/demo_android.gif) |
 
 <br />
 
