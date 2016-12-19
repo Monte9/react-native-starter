@@ -8,10 +8,50 @@
 
 # [Screens](#screens)
 
+## Login & Signup
+
 | Platform| Login     | Signup |
 | :------:| :-------: | :----: |
 | iOS|  <img src="screenshots/screens/login_ios.png" width="376" height="668">  | <img src="screenshots/screens/signup_ios.png" width="376" height="668">|
 | Android | <img src="screenshots/screens/login_android.png" width="334" height="594"> | <img src="screenshots/screens/signup_android.png" width="334" height="594"> |
+
+<br />
+
+## SideMenu
+
+| Platform| SideMenu     |
+| :------:| :-------: |
+| iOS|  <img src="screenshots/screens/sidemenu_ios.png" width="376" height="668"> |
+| Android | <img src="screenshots/screens/sidemenu_android.png" width="334" height="594"> |
+
+<br />
+
+## Tab Bar 1: Feed
+
+| Platform| Feed     | Explore |
+| :------:| :-------: | :----: |
+| iOS|  <img src="screenshots/screens/feed_1_ios.png" width="376" height="668">  | <img src="screenshots/screens/explore_ios.png" width="376" height="668">|
+| Android | <img src="screenshots/screens/feed_1_android.png" width="334" height="594"> | <img src="screenshots/screens/explore_android.png" width="334" height="594"> |
+
+<br />
+
+## Tab Bar 2: Portfolio
+
+| Platform| Portfolio     | Reload |
+| :------:| :-------: | :----: |
+| iOS|  <img src="screenshots/screens/portfolio_ios.png" width="376" height="668">  | <img src="screenshots/screens/reload_ios.png" width="376" height="668">|
+| Android | <img src="screenshots/screens/portfolio_android.png" width="334" height="594"> | <img src="screenshots/screens/reload_android.png" width="334" height="594"> |
+
+<br />
+
+## Tab Bar 3: Profile
+
+| Platform| Login     | Signup |
+| :------:| :-------: | :----: |
+| iOS|  <img src="screenshots/screens/profile_ios.png" width="376" height="668">  | <img src="screenshots/screens/history_ios.png" width="376" height="668">|
+| Android | <img src="screenshots/screens/profile_android.png" width="334" height="594"> | <img src="screenshots/screens/history_android.png" width="334" height="594"> |
+
+<br />
 
 ---------------
 
