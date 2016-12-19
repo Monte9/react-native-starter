@@ -11,7 +11,7 @@ const styles = {
   },
 }
 
-class ProfileAbout extends Component {
+class ProfileReload extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -22,4 +22,4 @@ class ProfileAbout extends Component {
   }
 }
 
-export default connect()(ProfileAbout)
+export default connect()(ProfileReload)

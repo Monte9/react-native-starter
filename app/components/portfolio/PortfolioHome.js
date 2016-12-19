@@ -9,13 +9,6 @@ import colors from '../../colors'
 import { push_portfolio } from '../../actions/navigation'
 
 class PortfolioHome extends Component {
-  componentDidMount() {
-    if(true) {
-      // this.props.hideTabBar()
-      // this.props.dispatch(push({ key: 'Login', type: 'login' }))
-    }
-  }
-
   render() {
     return (
       <ScrollView style={styles.container}>
@@ -51,6 +44,7 @@ class PortfolioHome extends Component {
             price='$125'
             info={['(balance)', 'Card Ending 4967', "Valid till '19"]}
             button={{ title: 'RELOAD', icon: 'repeat' }}
+            onButtonPress={() => this.props.dispatch(push_portfolio({ key: 'Reload', type: 'reload' }))}
           />
         </View>
       </ScrollView>

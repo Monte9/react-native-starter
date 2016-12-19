@@ -8,7 +8,7 @@ import Header from '../../components/headers/NavHeader'
 import ModalHeader from '../../components/headers/ModalHeader'
 
 import PortfolioHome from '../../components/portfolio/PortfolioHome'
-import PortfolioAbout from '../../components/portfolio/PortfolioAbout'
+import PortfolioReload from '../../components/portfolio/PortfolioReload'
 
 const {
   CardStack: NavigationCardStack,
@@ -19,8 +19,8 @@ class PortfolioNavContainer extends Component {
     switch(props.scene.route.key) {
       case 'Portfolio':
         return <PortfolioHome />
-      case 'About':
-        return <PortfolioAbout />
+      case 'Reload':
+        return <PortfolioReload />
     }
   }
 
