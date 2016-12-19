@@ -15,10 +15,10 @@ class FeedExplore extends Component {
     const { index } = this.props
 
     return (
-      <ScrollView style={{backgroundColor: 'white'}}>
+      <ScrollView style={{backgroundColor: colors.grey5}}>
         <View style={styles.container}>
           <Button
-            backgroundColor={colors.primary1}
+            backgroundColor={colors.primary2}
             textStyle={styles.exploreTitle}
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
             title={posts[index]["title"]} />
@@ -37,7 +37,7 @@ class FeedExplore extends Component {
             }
           <Button
             icon={{name: 'arrow-left', type: 'font-awesome', color:'white'}}
-            backgroundColor={colors.secondary}
+            backgroundColor={colors.primary2}
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
             title='Back'
             onPress={() => this.props.dispatch(pop_feed())}/>

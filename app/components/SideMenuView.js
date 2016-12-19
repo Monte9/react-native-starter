@@ -14,6 +14,8 @@ import { push } from '../actions/navigation'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { Button } from 'react-native-elements'
 
+import colors from '../colors'
+
 const window = Dimensions.get('window');
 const uri = 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg';
 
@@ -24,7 +26,7 @@ class SideMenuView extends Component {
         <View style={styles.menuHeader}>
           <Image
             style={styles.avatar}
-            source={{ uri }}/>
+            source={{uri}}/>
           <View style={styles.profileText}>
             <Text style={styles.name}>Chris Jackson</Text>
             <Text style={styles.title}>Vice Chairman</Text>
@@ -94,10 +96,10 @@ class SideMenuView extends Component {
           <Button
             buttonStyle={styles.logoutButton}
             raised
-            backgroundColor='rgba(120, 216, 194, 1)'
-            icon={{name: 'sign-out', type: 'font-awesome', color:'black'}}
+            backgroundColor={colors.primary2}
+            icon={{name: 'sign-out', type: 'font-awesome', color:'white'}}
             title='LOGOUT'
-            textStyle={{color: 'black'}}/>
+            textStyle={{color: 'white'}}/>
         </TouchableOpacity>
       </View>
     );
@@ -152,7 +154,7 @@ const styles = StyleSheet.create({
   title: {
     flex: 3,
     fontSize: 13,
-    color: 'grey'
+    color: 'grey',
   },
   iconContainer: {
     flex: 1,

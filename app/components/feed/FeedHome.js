@@ -31,7 +31,7 @@ class FeedHome extends Component {
 
   render() {
     return (
-      <ScrollView style={{backgroundColor: 'white'}}>
+      <ScrollView style={{backgroundColor: colors.grey5}}>
         <View style={styles.container}>
           {
             posts.map((post, index) => {
@@ -46,7 +46,7 @@ class FeedHome extends Component {
                   </Text>
                   <Button
                     icon={{name: 'eye', type: 'font-awesome', color:'white'}}
-                    backgroundColor={colors.secondary}
+                    backgroundColor={colors.primary2}
                     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
                     title='Explore'
                     onPress={this.showExploreView.bind(this, index)}/>

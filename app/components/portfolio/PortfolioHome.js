@@ -18,7 +18,7 @@ class PortfolioHome extends Component {
 
   render() {
     return (
-      <ScrollView style={{backgroundColor: 'white'}}>
+      <ScrollView style={{backgroundColor: colors.grey5}}>
         <View style={styles.headingContainer}>
           <Icon color='white' name='games' size={62} />
           <Text style={styles.heading}>Pricing</Text>
@@ -42,7 +42,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     padding: 40,
-    backgroundColor: colors.grey2
+    backgroundColor: colors.secondary2
   },
   heading: {
     color: 'white',

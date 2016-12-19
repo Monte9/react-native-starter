@@ -48,33 +48,33 @@ class TabContainer extends Component {
       <TabNavigator hidesTabTouch tabBarStyle={tabBarStyle} sceneStyle={sceneStyle}>
         <TabNavigator.Item
           titleStyle={[styles.titleStyle]}
-          selectedTitleStyle={{marginTop: -3, marginBottom: 7, color: colors.primary1}}
+          selectedTitleStyle={{marginTop: -3, marginBottom: 7, color: colors.primary2}}
           selected={selectedTab === 'feed'}
           title={selectedTab === 'feed' ? 'FEED' : null}
           renderIcon={() => <Icon color={colors.grey2} name='list' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary1} name='list' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.primary2} name='list' size={26} />}
           onPress={() => this.changeTab('feed')}>
           <FeedNavContainer hideTabBar={this._hideTabBar.bind(this)} disableGestures={this.props.disableGestures} />
         </TabNavigator.Item>
         <TabNavigator.Item
           tabStyle={selectedTab !== 'portfolio' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
-          selectedTitleStyle={{marginTop: -3, marginBottom: 7, color: colors.primary1}}
+          selectedTitleStyle={{marginTop: -3, marginBottom: 7, color: colors.primary2}}
           selected={selectedTab === 'portfolio'}
           title={selectedTab === 'portfolio' ? 'PORTFOLIO' : null}
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='attach-money' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary1} name='attach-money' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.primary2} name='attach-money' size={26} />}
           onPress={() => this.changeTab('portfolio')}>
           <PortfolioNavContainer hideTabBar={this._hideTabBar.bind(this)} />
         </TabNavigator.Item>
         <TabNavigator.Item
           tabStyle={selectedTab !== 'profile' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
-          selectedTitleStyle={{marginTop: -3, marginBottom: 7, color: colors.primary1}}
+          selectedTitleStyle={{marginTop: -3, marginBottom: 7, color: colors.primary2}}
           selected={selectedTab === 'profile'}
           title={selectedTab === 'profile' ? 'PROFILE' : null}
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='contacts' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary1} name='contacts' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.primary2} name='contacts' size={26} />}
           onPress={() => this.changeTab('profile')}>
           <ProfileNavContainer hideTabBar={this._hideTabBar.bind(this)} />
         </TabNavigator.Item>
