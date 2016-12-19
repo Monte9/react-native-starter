@@ -1,6 +1,6 @@
 <img src="logo_header.png" width="880" height="300">
 
-🚀 React Native 🚀 starter app that uses all the latest 💯 & greatest 🏅 components! - [Demo](#screens)
+🚀 React Native 🚀 starter app that uses all the latest 💯 & greatest 🏅 components! - [Screens](#screens) & [Demo](#demo)
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/monte9/react-native-starter/blob/master/LICENSE)
 
@@ -65,7 +65,6 @@
 
 * `yarn`
 
-<br />
 
 ## Running the app
 
@@ -222,4 +221,4 @@ apm install editorconfig es6-javascript javascript-snippets linter linter-eslint
 
 Yes. This project is actively under development. PR's are much appreciated.
 
-###### "Work is it's own Reward!" -Monte Thakkar
+###### "Work is it's own reward!" -Monte Thakkar
