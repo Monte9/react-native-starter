@@ -8,34 +8,10 @@
 
 # [Screens](#screens)
 
-- [Login](#login)
-- [Signup](#Signup)
-- [Side Menu](#side-menu)
-- [Tab Bar 1: Feed](#tab-bar-1-feed)
-- [Tab Bar 2: Portfolio](#tab-bar-2-portfolio)
-- [Tab Bar 3: Profile](#tab-bar-3-profile)
-
-## Login
-
-<img src="screenshots/screens/login_ios.png" width="376" height="594" style="margin-right: 50px;"><img src="screenshots/screens/login_android.png" width="334" height="594" style="margin-left: 50px;">
-
-## Signup
-
-<img src="screenshots/screens/signup_ios.png" width="376" height="594"> <img src="screenshots/screens/signup_android.png" width="376" height="594">
-
-## Side Menu
-
-<img src="screenshots/screens/sidemenu_ios.png" width="376" height="594"> <img src="screenshots/screens/sidemenu_android.png" width="376" height="594">
-
-## Tab Bar 1: Feed
-
-<img src="screenshots/screens/feed_1_ios.png" width="300" height="533"> <img src="screenshots/screens/feed_1_android.png" width="300" height="533">
-
-<img src="screenshots/screens/explore_ios.png" width="300" height="533"> <img src="screenshots/screens/explore_android.png" width="300" height="533">
-
-## Tab Bar 2: Portfolio
-
-## Tab Bar 3: Profile
+| Platform| Login     | Signup |
+| :------:| :-------: | :----: |
+| iOS|  <img src="screenshots/screens/login_ios.png" width="376" height="668">  | <img src="screenshots/screens/signup_ios.png" width="376" height="668">|
+| Android | <img src="screenshots/screens/login_android.png" width="334" height="594"> | <img src="screenshots/screens/signup_android.png" width="334" height="594"> |
 
 ---------------
 
