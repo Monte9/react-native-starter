@@ -46,7 +46,7 @@
 
 ## Tab Bar 3: Profile
 
-| Platform| Login     | Signup |
+| Platform| Profile     | History |
 | :------:| :-------: | :----: |
 | iOS|  <img src="screenshots/screens/profile_ios.png" width="376" height="668">  | <img src="screenshots/screens/history_ios.png" width="376" height="668">|
 | Android | <img src="screenshots/screens/profile_android.png" width="334" height="594"> | <img src="screenshots/screens/history_android.png" width="334" height="594"> |
@@ -93,7 +93,6 @@
 1. The app is a runs on **BOTH** iOS & Android using single codebase mostly written in Javascript.
 1. The app has Login & Signup screens with reducers for user input, login & signup actions.
 1. The Login & Signup screens display a spinner to indicate activity.
-1. The Login & Signup forms also validate user input and display error message about the input fields.
 1. The app includes a Tab Bar Controller and is customizable to add more tabs.
 1. Each Tab Bar has it's own navigation state and hence can provide independent navigation states.
 1. The app uses Navigation Experimental to handle navigation.
@@ -167,10 +166,6 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 **React Native implementation for Do, a free UI kit.**
 
 <a href="https://github.com/browniefed/react-native-screens"><img src="screenshots/react-native-screens.png" width="850" height="95.3"></a>
-
-Active contributor on React Native Screens repo. Submitted PR's for Login & Signup screens.
-
-You can see the entire DO library on Invision [here:](https://www.invisionapp.com/do)
 
 <br />
 
