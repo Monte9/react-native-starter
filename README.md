@@ -11,13 +11,13 @@
 - [Login](#login)
 - [Signup](#Signup)
 - [Side Menu](#side-menu)
-- [Tab Bar 1: Feed](#feed)
-- [Tab Bar 2: Portfolio](#portfolio)
-- [Tab Bar 3: Profile](#profile)
+- [Tab Bar 1: Feed](#tab-bar-1-feed)
+- [Tab Bar 2: Portfolio](#tab-bar-2-portfolio)
+- [Tab Bar 3: Profile](#tab-bar-3-profile)
 
 ## Login
 
-<img src="screenshots/screens/login_ios.png" width="300" height="533"> <img src="screenshots/screens/login_android.png" width="300" height="533">
+<img src="screenshots/screens/login_ios.png" width="376" height="668" style="margin-right: 50px"><img src="screenshots/screens/login_android.png" width="334" height="594" style="margin-left: 50px">
 
 ## Signup
 
