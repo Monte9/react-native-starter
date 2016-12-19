@@ -20,7 +20,7 @@
 # Content
 
 - [Installation](#installation)
-- [Run it](#runnning-the-app)
+- [Run it](#running-the-app)
 - [Summary](#summary)
 - [Technologies](#technologies)
 - [Screens](#screens)
