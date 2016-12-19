@@ -76,6 +76,9 @@ const styles = {
     paddingLeft: 20,
     paddingTop: 10,
     paddingBottom: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
   },
   balanceView: {
     justifyContent: 'center',
@@ -88,11 +91,11 @@ const styles = {
     paddingTop: 10,
   },
   balanceScore: {
-    fontSize: 50,
+    fontSize: 35,
     color: 'white',
   },
   bodycontainer: {
-    flex: 3,
+    flex: 2,
     paddingTop: 10,
   },
   heading: {

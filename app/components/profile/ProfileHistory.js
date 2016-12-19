@@ -13,7 +13,7 @@ class ProfileHistory extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.secondaryText}>
-          Profile History
+          Contributions History
         </Text>
         <Icon color='black' name='history' size={60} />
       </View>

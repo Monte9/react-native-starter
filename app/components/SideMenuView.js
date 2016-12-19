@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
   },
   name: {
-    flex: 1,
+    flex: 1.5,
     fontSize: 18,
     color: 'black',
     paddingTop: 15,

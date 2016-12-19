@@ -6,11 +6,36 @@
 
 ---------------
 
-## [Screens](#screens)
+# [Screens](#screens)
 
-<img src="screenshots/login_both.png" width="600" height="559">
+- [Login](#login)
+- [Signup](#Signup)
+- [Side Menu](#side-menu)
+- [Tab Bar 1: Feed](#feed)
+- [Tab Bar 2: Portfolio](#portfolio)
+- [Tab Bar 3: Profile](#profile)
 
-<img src="screenshots/signup_both.png" width="600" height="559">
+## Login
+
+<img src="screenshots/screens/login_ios.png" width="300" height="533"> <img src="screenshots/screens/login_android.png" width="300" height="533">
+
+## Signup
+
+<img src="screenshots/screens/signup_ios.png" width="300" height="533"> <img src="screenshots/screens/signup_android.png" width="300" height="533">
+
+## Side Menu
+
+<img src="screenshots/screens/sidemenu_ios.png" width="300" height="533"> <img src="screenshots/screens/sidemenu_android.png" width="300" height="533">
+
+## Tab Bar 1: Feed
+
+<img src="screenshots/screens/feed_1_ios.png" width="300" height="533"> <img src="screenshots/screens/feed_1_android.png" width="300" height="533">
+
+<img src="screenshots/screens/explore_ios.png" width="300" height="533"> <img src="screenshots/screens/explore_android.png" width="300" height="533">
+
+## Tab Bar 2: Portfolio
+
+## Tab Bar 3: Profile
 
 ---------------
 
@@ -40,6 +65,7 @@
 
 - [Summary](#summary)
 - [Technologies](#technologies)
+- [Screens](#screens)
 - [Editor Setup](#editor-setup)
 - [TODO](#todo)
 - [FAQ](#faq)
