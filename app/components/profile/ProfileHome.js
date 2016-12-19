@@ -35,7 +35,7 @@ class ProfileHome extends Component {
           </View>
         </View>
         <View style={styles.bodycontainer}>
-          <List containerStyle={{marginBottom: 10}}>
+          <List>
           {
             settings_section.map((item, index) => (
               <ListItem

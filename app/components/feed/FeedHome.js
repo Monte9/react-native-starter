@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image, ScrollView } from 'react-native'
+import { View, Image, ScrollView, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
 
 import { Card, Text, Button } from 'react-native-elements'
@@ -36,21 +36,26 @@ class FeedHome extends Component {
           {
             posts.map((post, index) => {
               return (
-                <Card
-                  title={post.title}
-                  image={{uri: post.post_uri}}
-                  containerStyle={{backgroundColor: colors.grey4}}
+                <TouchableOpacity
+                  onPress={this.showExploreView.bind(this, index)}
+                  activeOpacity={1}
                   key={index}>
-                  <Text style={{marginBottom: 10}}>
-                    {post.post_text}
-                  </Text>
-                  <Button
-                    icon={{name: 'eye', type: 'font-awesome', color:'white'}}
-                    backgroundColor={colors.primary2}
-                    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                    title='Explore'
-                    onPress={this.showExploreView.bind(this, index)}/>
-                </Card>
+                  <Card
+                    title={post.title}
+                    image={{uri: post.post_uri}}
+                    containerStyle={{backgroundColor: colors.grey4}}
+                    onPress={this.showExploreView.bind(this, index)}>
+                    <Text style={{marginBottom: 10}}>
+                      {post.post_text}
+                    </Text>
+                    <Button
+                      icon={{name: 'eye', type: 'font-awesome', color:'white'}}
+                      backgroundColor={colors.primary2}
+                      buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+                      title='Explore'
+                      onPress={this.showExploreView.bind(this, index)}/>
+                  </Card>
+                </TouchableOpacity>
               )
             })
           }
