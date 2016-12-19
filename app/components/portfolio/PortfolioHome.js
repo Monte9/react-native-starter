@@ -11,7 +11,7 @@ import { push_portfolio } from '../../actions/navigation'
 class PortfolioHome extends Component {
   render() {
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.headingContainer}>
           <View style={styles.headerIcon}>
             <Icon color='white' name='ios-briefcase' size={100} />
@@ -47,7 +47,7 @@ class PortfolioHome extends Component {
             onButtonPress={() => this.props.dispatch(push_portfolio({ key: 'Reload', type: 'reload' }))}
           />
         </View>
-      </ScrollView>
+      </View>
     )
   }
 }
