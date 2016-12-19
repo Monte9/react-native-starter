@@ -24,6 +24,7 @@
 
 * `yarn`
 
+<br />
 
 ## Running the app
 
@@ -43,6 +44,7 @@
 - [TODO](#todo)
 - [FAQ](#faq)
 
+<br />
 
 ## Summary
 
@@ -55,10 +57,12 @@
 1. The app uses Navigation Experimental to handle navigation.
 1. The app also includes a Side Menu and it's customizable.
 
+<br />
+
 ## Technologies
 *The following are brief descriptions of the technologies used*
 
-### [React-Native](https://facebook.github.io/react-native/)
+1. ### [React-Native](https://facebook.github.io/react-native/)
 
 **Learn once, write anywhere: Build mobile apps with React**
 
@@ -66,7 +70,7 @@
 
 <br />
 
-###[Redux](http://redux.js.org/)
+1. ###[Redux](http://redux.js.org/)
 
 **Redux is a predictable state container for JavaScript apps.**
 
@@ -76,7 +80,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Navigation Experimental](https://facebook.github.io/react-native/docs/navigation.html#navigationexperimental)
+1. ###[React Native Navigation Experimental](https://facebook.github.io/react-native/docs/navigation.html#navigationexperimental)
 
 **If you are looking for greater control over your navigation stack, you can't go wrong with NavigationExperimental.**
 
@@ -84,31 +88,39 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator)
+1. ###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator)
 
 **Tab Bar component for React Native**
 
 <a href="https://github.com/exponentjs/react-native-tab-navigator"><img src="screenshots/react-native-tab-navigator.png" width="850" height="90.85"></a>
 
-###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
+<br />
+
+1. ###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
 
 **Side menu component for React Native**
 
 <a href="https://github.com/react-native-community/react-native-side-menu"><img src="screenshots/react-native-side-menu.png" width="850" height="130"></a>
 
-###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+<br />
 
-**3000 Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full stying.**
-
-<a href="https://github.com/oblador/react-native-vector-icons"><img src="screenshots/react-native-vector-icons.png" width="850" height="143.72"></a>
-
-###[React Native Elements](https://github.com/react-native-community/react-native-elements)
+1. ###[React Native Elements](https://github.com/react-native-community/react-native-elements)
 
 **React Native Elements UI Toolkit**
 
 <a href="https://github.com/react-native-community/react-native-elements"><img src="screenshots/react-native-elements.png" width="850" height="130"></a>
 
-###[React Native Screens](https://github.com/browniefed/react-native-screens)
+<br />
+
+1. ###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+
+**3000 Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full stying.**
+
+<a href="https://github.com/oblador/react-native-vector-icons"><img src="screenshots/react-native-vector-icons.png" width="850" height="143.72"></a>
+
+<br />
+
+1. ###[React Native Screens](https://github.com/browniefed/react-native-screens)
 
 **React Native implementation for Do, a free UI kit.**
 
@@ -118,6 +130,7 @@ Active contributor on React Native Screens repo. Submitted PR's for Login & Sign
 
 You can see the entire DO library on Invision [here:](https://www.invisionapp.com/do)
 
+<br />
 
 ## Editor Setup
 
@@ -136,6 +149,7 @@ You can see the entire DO library on Invision [here:](https://www.invisionapp.co
 apm install editorconfig es6-javascript javascript-snippets linter linter-eslint language-babel
 ```
 
+<br />
 
 ## TODO
 
@@ -153,6 +167,7 @@ apm install editorconfig es6-javascript javascript-snippets linter linter-eslint
 
 - [Jest](https://facebook.github.io/jest/) & [Snapshot tests](http://facebook.github.io/jest/blog/2016/07/27/jest-14.html)
 
+<br />
 
 ## FAQ
 

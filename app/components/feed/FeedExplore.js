@@ -17,7 +17,11 @@ class FeedExplore extends Component {
     return (
       <ScrollView style={{backgroundColor: 'white'}}>
         <View style={styles.container}>
-          <Text style={styles.exploreTitle}>{posts[index]["title"]}</Text>
+          <Button
+            backgroundColor={colors.primary1}
+            textStyle={styles.exploreTitle}
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+            title={posts[index]["title"]} />
             {
               posts[index]["explore_images"].map((image, index) => {
                 console.log(image)
@@ -32,7 +36,7 @@ class FeedExplore extends Component {
               })
             }
           <Button
-            icon={{name: 'backward', type: 'font-awesome', color:'white'}}
+            icon={{name: 'arrow-left', type: 'font-awesome', color:'white'}}
             backgroundColor={colors.secondary}
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
             title='Back'
@@ -50,7 +54,6 @@ const styles = {
   },
   exploreTitle: {
     fontSize: 18,
-    color: colors.primary1,
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
