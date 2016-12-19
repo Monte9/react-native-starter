@@ -8,7 +8,11 @@ import Header from '../../components/headers/NavHeader'
 import ModalHeader from '../../components/headers/ModalHeader'
 
 import ProfileHome from '../../components/profile/ProfileHome'
-import ProfileAbout from '../../components/profile/ProfileAbout'
+import ProfileHistory from '../../components/profile/ProfileHistory'
+import EditProfile from '../../components/profile/EditProfile'
+import ChangePassword from '../../components/profile/ChangePassword'
+import CardDetails from '../../components/profile/CardDetails'
+import Updates from '../../components/profile/Updates'
 
 const {
   CardStack: NavigationCardStack,
@@ -19,8 +23,16 @@ class ProfileNavContainer extends Component {
     switch(props.scene.route.key) {
       case 'Profile':
         return <ProfileHome changeTab={this.props.changeTab}/>
-      case 'About':
-        return <ProfileAbout />
+      case 'History':
+        return <ProfileHistory />
+      case 'EditProfile':
+        return <EditProfile />
+      case 'ChangePassword':
+        return <ChangePassword />
+      case 'CardDetails':
+        return <CardDetails />
+      case 'Updates':
+        return <Updates />
     }
   }
 

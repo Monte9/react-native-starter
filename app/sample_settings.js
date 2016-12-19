@@ -1,45 +1,27 @@
 export default [
   {
-    title: 'Appointments',
+    title: 'History',
+    route: 'History',
     icon: 'av-timer'
   },
   {
-    title: 'Trips',
+    title: 'Edit Profile',
+    route: 'EditProfile',
     icon: 'flight-takeoff'
   },
   {
-    title: 'Passwords',
+    title: 'Change Password',
+    route: 'ChangePassword',
     icon: 'fingerprint'
   },
   {
-    title: 'Pitches',
+    title: 'Card Details',
+    route: 'CardDetails',
     icon: 'lightbulb-outline'
   },
   {
     title: 'Updates',
-    icon: 'track-changes'
-  }
-]
-
-const section2 = [
-  {
-    title: 'Appointments',
-    icon: 'av-timer'
-  },
-  {
-    title: 'Trips',
-    icon: 'flight-takeoff'
-  },
-  {
-    title: 'Passwords',
-    icon: 'fingerprint'
-  },
-  {
-    title: 'Pitches',
-    icon: 'lightbulb-outline'
-  },
-  {
-    title: 'Updates',
+    route: 'Updates',
     icon: 'track-changes'
   }
 ]

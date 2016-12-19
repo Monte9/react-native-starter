@@ -40,7 +40,7 @@ class ProfileHome extends Component {
             settings_section.map((item, index) => (
               <ListItem
                 key={index}
-                onPress={() => console.log("Profile Setting Item clicked")}
+                onPress={() => this.props.dispatch(push_profile({ key: item.route, type: item.route }))}
                 title={item.title}
                 icon={{name: item.icon}} />
             ))
