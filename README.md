@@ -17,15 +17,15 @@
 
 ## Login
 
-<img src="screenshots/screens/login_ios.png" width="376" height="668" style="margin-right: 50px"><img src="screenshots/screens/login_android.png" width="334" height="594" style="margin-left: 50px">
+<img src="screenshots/screens/login_ios.png" width="376" height="594" style="margin-right: 50px;"><img src="screenshots/screens/login_android.png" width="334" height="594" style="margin-left: 50px;">
 
 ## Signup
 
-<img src="screenshots/screens/signup_ios.png" width="300" height="533"> <img src="screenshots/screens/signup_android.png" width="300" height="533">
+<img src="screenshots/screens/signup_ios.png" width="376" height="594"> <img src="screenshots/screens/signup_android.png" width="376" height="594">
 
 ## Side Menu
 
-<img src="screenshots/screens/sidemenu_ios.png" width="300" height="533"> <img src="screenshots/screens/sidemenu_android.png" width="300" height="533">
+<img src="screenshots/screens/sidemenu_ios.png" width="376" height="594"> <img src="screenshots/screens/sidemenu_android.png" width="376" height="594">
 
 ## Tab Bar 1: Feed
 
