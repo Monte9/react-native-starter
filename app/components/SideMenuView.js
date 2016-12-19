@@ -40,8 +40,7 @@ class SideMenuView extends Component {
               name='group-work'
               size={35}
               color='#E91E63'
-              style={styles.iconStyle}
-              onPress={() => console.log('Button Pressed')} />
+              style={styles.iconStyle} />
             <Text style={[styles.menuItemText, {color: '#E91E63'}]}>Maps</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -63,8 +62,7 @@ class SideMenuView extends Component {
               color='#00BCD4'
               size={35}
               name='pets'
-              style={styles.iconStyle}
-              onPress={() => console.log('Button Pressed')} />
+              style={styles.iconStyle} />
             <Text style={[styles.menuItemText, {color: '#00BCD4'}]}>Analytics</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -75,8 +73,7 @@ class SideMenuView extends Component {
               color='#a82400'
               size={35}
               name='polymer'
-              style={styles.iconStyle}
-              onPress={() => console.log('Button Pressed')} />
+              style={styles.iconStyle} />
             <Text style={[styles.menuItemText, {color: '#a82400'}]}>Sharing</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -87,14 +84,13 @@ class SideMenuView extends Component {
               color='#FF5722'
               size={35}
               name='touch-app'
-              style={styles.iconStyle}
-              onPress={() => console.log('Button Pressed')} />
+              style={styles.iconStyle} />
             <Text style={[styles.menuItemText, {color: '#FF5722'}]}>One Touch</Text>
           </TouchableOpacity>
           <View style={styles.iconPadding} />
         </View>
 
-        <View style={styles.menuFooter}>
+        <TouchableOpacity style={styles.menuFooter}>
           <Button
             buttonStyle={styles.logoutButton}
             raised
@@ -102,7 +98,7 @@ class SideMenuView extends Component {
             icon={{name: 'sign-out', type: 'font-awesome', color:'black'}}
             title='LOGOUT'
             textStyle={{color: 'black'}}/>
-        </View>
+        </TouchableOpacity>
       </View>
     );
   }

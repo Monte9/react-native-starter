@@ -8,7 +8,7 @@ import Header from '../../components/headers/NavHeader'
 import ModalHeader from '../../components/headers/ModalHeader'
 
 import FeedHome from '../../components/feed/FeedHome'
-import FeedAbout from '../../components/feed/FeedAbout'
+import FeedExplore from '../../components/feed/FeedExplore'
 
 import Login from '../../components/Login'
 import Signup from '../../components/SignupView'
@@ -22,8 +22,8 @@ class FeedNavContainer extends Component {
     switch(props.scene.route.key) {
       case 'Feed':
         return <FeedHome hideTabBar={this.props.hideTabBar} disableGestures={this.props.disableGestures} />
-      case 'About':
-        return <FeedAbout />
+      case 'Explore':
+        return <FeedExplore />
       case 'Login':
         return <Login hideTabBar={this.props.hideTabBar} disableGestures={this.props.disableGestures} />
       case 'Signup':

@@ -1,22 +1,17 @@
 import {
-  PUSH_ROUTE_FEED,
-  POP_ROUTE_FEED
-} from '../actions/navigation'
+  SAVE_EXPLORE_INDEX,
+} from '../actions/feed'
 
-import pushRoute from './nav/push_route'
-import popRoute from './nav/pop_route'
+import saveExploreIndex from './feed/save_explore_index'
 
 const initialState = {
-  index: 0,
-  routes: [{ key: 'Login', type: 'login' }],
+  index: null,
 }
 
 export default function( state = initialState, action ) {
   switch (action.type) {
-    case PUSH_ROUTE_FEED:
-      return pushRoute( state, action )
-    case POP_ROUTE_FEED:
-      return popRoute( state, action )
+    case SAVE_EXPLORE_INDEX:
+      return saveExploreIndex( state, action )
     default:
       return state
   }
