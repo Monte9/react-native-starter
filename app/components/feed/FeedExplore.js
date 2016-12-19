@@ -35,12 +35,6 @@ class FeedExplore extends Component {
                 )
               })
             }
-          <Button
-            icon={{name: 'arrow-left', type: 'font-awesome', color:'white'}}
-            backgroundColor={colors.primary2}
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-            title='Back'
-            onPress={() => this.props.dispatch(pop_feed())}/>
         </View>
       </ScrollView>
     )

@@ -5,14 +5,13 @@ import {
   ScrollView,
   View,
   Image,
-  Text,
   TouchableOpacity
 } from 'react-native'
 import { connect } from 'react-redux'
 import { restart_feed } from '../actions/navigation'
 
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { Button } from 'react-native-elements'
+import { Text, Button, SocialIcon } from 'react-native-elements'
 
 import colors from '../colors'
 
@@ -89,19 +88,29 @@ class SideMenuView extends Component {
               style={styles.iconStyle} />
             <Text style={[styles.menuItemText, {color: '#FF5722'}]}>One Touch</Text>
           </TouchableOpacity>
-          <View style={styles.iconPadding} />
+          <View style={styles.iconPadding}>
+            <Text style={styles.shareText}>Share:</Text>
+          </View>
         </View>
 
-        <TouchableOpacity style={styles.menuFooter}>
-          <Button
-            buttonStyle={styles.logoutButton}
-            raised
-            backgroundColor={colors.primary2}
-            onPress={() => this.props.dispatch(restart_feed({ key: 'Login', type: 'login' }))}
-            icon={{name: 'sign-out', type: 'font-awesome', color:'white'}}
-            title='LOGOUT'
-            textStyle={{color: 'white'}}/>
-        </TouchableOpacity>
+        <View style={styles.menuFooter}>
+          <View style={styles.socialIconContainers}>
+            <SocialIcon
+              type='medium'
+              onPress={() => console.log('Write about us on Medium')} />
+          </View>
+          <View style={styles.socialIconContainers}>
+            <SocialIcon
+              raised={true}
+              type='facebook'
+              onPress={() => console.log('Share on Facebook!')} />
+          </View>
+          <View style={styles.socialIconContainers}>
+            <SocialIcon
+              type='twitter'
+              onPress={() => console.log('Tweet about us.')} />
+          </View>
+        </View>
       </View>
     );
   }
@@ -128,11 +137,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#D8D8D8'
   },
   menuFooter: {
-    flex: 1,
+    flex: 1.5,
     flexDirection: 'row',
-    paddingLeft: 20,
     paddingBottom: 30,
     backgroundColor: '#D8D8D8'
+  },
+  socialIconContainers: {
+    paddingLeft: 10,
   },
   avatar: {
     width: 70,
@@ -165,7 +176,14 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   iconPadding: {
-    flex: 3,
+    flex: 4,
+  },
+  shareText: {
+    position: 'absolute',
+    bottom: 10,
+    left: 80,
+    fontSize: 28,
+    color: colors.grey1,
   },
   iconStyle: {
     justifyContent: 'center',
@@ -179,9 +197,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignSelf: 'center'
   },
-  logoutButton: {
-    width: window.width / 3 + 20,
-  }
 });
 
 export default connect()(SideMenuView)
