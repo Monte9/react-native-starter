@@ -141,8 +141,8 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 | Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| Login|  <img src="screenshots/screens/login_ios.png" width="376" height="668">  | <img src="screenshots/screens/login_android.png" width="334" height="594"> |
-| Signup | <img src="screenshots/screens/signup_ios.png" width="376" height="668"> | <img src="screenshots/screens/signup_android.png" width="334" height="594"> |
+| Login|  <img src="screenshots/screens/login_ios.png" width="376" height="668">  | <img src="screenshots/screens/login_android.png" width="376" height="668"> |
+| Signup | <img src="screenshots/screens/signup_ios.png" width="376" height="668"> | <img src="screenshots/screens/signup_android.png" width="376" height="668"> |
 
 <br />
 
@@ -151,7 +151,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 | Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| SideMenu|  <img src="screenshots/screens/sidemenu_ios.png" width="376" height="668">  | <img src="screenshots/screens/sidemenu_android.png" width="334" height="594"> |
+| SideMenu|  <img src="screenshots/screens/sidemenu_ios.png" width="376" height="668">  | <img src="screenshots/screens/sidemenu_android.png" width="376" height="668"> |
 <br />
 
 ## Tab Bar 1: Feed
@@ -159,8 +159,8 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 | Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| Feed|  <img src="screenshots/screens/feed_1_ios.png" width="376" height="668">  | <img src="screenshots/screens/feed_1_android.png" width="334" height="594">|
-| Explore | <img src="screenshots/screens/explore_ios.png" width="376" height="668"> | <img src="screenshots/screens/explore_android.png" width="334" height="594"> |
+| Feed|  <img src="screenshots/screens/feed_1_ios.png" width="376" height="668">  | <img src="screenshots/screens/feed_1_android.png" width="376" height="668">|
+| Explore | <img src="screenshots/screens/explore_ios.png" width="376" height="668"> | <img src="screenshots/screens/explore_android.png" width="376" height="668"> |
 
 <br />
 
@@ -169,8 +169,8 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 | Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| Portfolio|  <img src="screenshots/screens/portfolio_ios.png" width="376" height="668">  | <img src="screenshots/screens/portfolio_android.png" width="334" height="594">|
-| Reload | <img src="screenshots/screens/reload_ios.png" width="376" height="668"> | <img src="screenshots/screens/reload_android.png" width="334" height="594"> |
+| Portfolio|  <img src="screenshots/screens/portfolio_ios.png" width="376" height="668">  | <img src="screenshots/screens/portfolio_android.png" width="376" height="668">|
+| Reload | <img src="screenshots/screens/reload_ios.png" width="376" height="668"> | <img src="screenshots/screens/reload_android.png" width="376" height="668"> |
 
 <br />
 
@@ -180,8 +180,8 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 | Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| Profile|  <img src="screenshots/screens/profile_ios.png" width="376" height="668">  | <img src="screenshots/screens/profile_android.png" width="334" height="594">|
-| History | <img src="screenshots/screens/history_ios.png" width="376" height="668"> | <img src="screenshots/screens/history_android.png" width="334" height="594"> |
+| Profile|  <img src="screenshots/screens/profile_ios.png" width="376" height="668">  | <img src="screenshots/screens/profile_android.png" width="376" height="668">|
+| History | <img src="screenshots/screens/history_ios.png" width="376" height="668"> | <img src="screenshots/screens/history_android.png" width="376" height="668"> |
 
 <br />
 
