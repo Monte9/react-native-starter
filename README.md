@@ -76,7 +76,7 @@
 
 <br />
 
-###[Redux](http://redux.js.org/)
+### [Redux](http://redux.js.org/)
 
 **Redux is a predictable state container for JavaScript apps.**
 
@@ -86,7 +86,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Navigation Experimental](https://facebook.github.io/react-native/docs/navigation.html#navigationexperimental)
+### [React Native Navigation Experimental](https://facebook.github.io/react-native/docs/navigation.html#navigationexperimental)
 
 **If you are looking for greater control over your navigation stack, you can't go wrong with NavigationExperimental.**
 
@@ -94,7 +94,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator)
+### [React Native Tab Navigator](https://github.com/exponentjs/react-native-tab-navigator)
 
 **Tab Bar component for React Native**
 
@@ -102,7 +102,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
+### [React Native Side Menu](https://github.com/react-native-community/react-native-side-menu)
 
 **Side menu component for React Native**
 
@@ -110,7 +110,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Elements](https://github.com/react-native-community/react-native-elements)
+### [React Native Elements](https://github.com/react-native-community/react-native-elements)
 
 **React Native Elements UI Toolkit**
 
@@ -118,7 +118,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+### [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
 
 **3000 Customizable Icons for React Native with support for NavBar/TabBar/ToolbarAndroid, image source and full stying.**
 
@@ -126,7 +126,7 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 <br />
 
-###[React Native Screens](https://github.com/browniefed/react-native-screens)
+### [React Native Screens](https://github.com/browniefed/react-native-screens)
 
 **React Native implementation for Do, a free UI kit.**
 
@@ -138,46 +138,50 @@ If you'd like to read an excellent tutorial on Redux check this out: [https://eg
 
 ## Login & Signup
 
-| Platform| Login     | Signup |
+
+| Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| iOS|  <img src="screenshots/screens/login_ios.png" width="376" height="668">  | <img src="screenshots/screens/signup_ios.png" width="376" height="668">|
-| Android | <img src="screenshots/screens/login_android.png" width="334" height="594"> | <img src="screenshots/screens/signup_android.png" width="334" height="594"> |
+| Login|  <img src="screenshots/screens/login_ios.png" width="376" height="668">  | <img src="screenshots/screens/login_android.png" width="376" height="668"> |
+| Signup | <img src="screenshots/screens/signup_ios.png" width="376" height="668"> | <img src="screenshots/screens/signup_android.png" width="376" height="668"> |
 
 <br />
 
 ## SideMenu
 
-| Platform| SideMenu     |
-| :------:| :-------: |
-| iOS|  <img src="screenshots/screens/sidemenu_ios.png" width="376" height="668"> |
-| Android | <img src="screenshots/screens/sidemenu_android.png" width="334" height="594"> |
 
+| Platform| iOS     | Android |
+| :------:| :-------: | :----: |
+| SideMenu|  <img src="screenshots/screens/sidemenu_ios.png" width="376" height="668">  | <img src="screenshots/screens/sidemenu_android.png" width="376" height="668"> |
 <br />
 
 ## Tab Bar 1: Feed
 
-| Platform| Feed     | Explore |
+
+| Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| iOS|  <img src="screenshots/screens/feed_1_ios.png" width="376" height="668">  | <img src="screenshots/screens/explore_ios.png" width="376" height="668">|
-| Android | <img src="screenshots/screens/feed_1_android.png" width="334" height="594"> | <img src="screenshots/screens/explore_android.png" width="334" height="594"> |
+| Feed|  <img src="screenshots/screens/feed_1_ios.png" width="376" height="668">  | <img src="screenshots/screens/feed_1_android.png" width="376" height="668">|
+| Explore | <img src="screenshots/screens/explore_ios.png" width="376" height="668"> | <img src="screenshots/screens/explore_android.png" width="376" height="668"> |
 
 <br />
 
 ## Tab Bar 2: Portfolio
 
-| Platform| Portfolio     | Reload |
+
+| Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| iOS|  <img src="screenshots/screens/portfolio_ios.png" width="376" height="668">  | <img src="screenshots/screens/reload_ios.png" width="376" height="668">|
-| Android | <img src="screenshots/screens/portfolio_android.png" width="334" height="594"> | <img src="screenshots/screens/reload_android.png" width="334" height="594"> |
+| Portfolio|  <img src="screenshots/screens/portfolio_ios.png" width="376" height="668">  | <img src="screenshots/screens/portfolio_android.png" width="376" height="668">|
+| Reload | <img src="screenshots/screens/reload_ios.png" width="376" height="668"> | <img src="screenshots/screens/reload_android.png" width="376" height="668"> |
 
 <br />
 
 ## Tab Bar 3: Profile
 
-| Platform| Profile     | History |
+
+
+| Platform| iOS     | Android |
 | :------:| :-------: | :----: |
-| iOS|  <img src="screenshots/screens/profile_ios.png" width="376" height="668">  | <img src="screenshots/screens/history_ios.png" width="376" height="668">|
-| Android | <img src="screenshots/screens/profile_android.png" width="334" height="594"> | <img src="screenshots/screens/history_android.png" width="334" height="594"> |
+| Profile|  <img src="screenshots/screens/profile_ios.png" width="376" height="668">  | <img src="screenshots/screens/profile_android.png" width="376" height="668">|
+| History | <img src="screenshots/screens/history_ios.png" width="376" height="668"> | <img src="screenshots/screens/history_android.png" width="376" height="668"> |
 
 <br />
 
